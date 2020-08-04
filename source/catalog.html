@@ -11,18 +11,18 @@
     <a class="page-header__logo" href="index.html">
       <img src="https://via.placeholder.com/86x35" width="86" height="35" alt="Логотип магазина «Мишка»">
     </a>
-    <nav class="main-nav">
+		<nav class="main-nav">
       <button class="page-header__button" type="button"></button>
-      <ul class="link-lists">
-        <li>
-          <a class="main-nav__item catalog-link">Каталог товаров</a>
+      <ul class="link-lists main-nav__item">
+        <li class="link-lists__item">
+          <a class="catalog-link">Каталог товаров</a>
         </li>
-        <li>
-          <a class="main-nav__item form-link" href="form.html">Вязание на заказ</a>
+        <li class="link-lists__item">
+          <a class="form-link" href="form.html">Вязание на заказ</a>
         </li>
       </ul>
-      <ul class="interactive-list">
-        <li>
+      <ul class="interactive-list main-nav__item">
+        <li class="interactive-list__item">
           <form class="main-nav__item search-field" action="https://echo.htmlacademy.ru/courses" method="get">
             <p>
               <label for="search-field">Поиск по сайту</label>
@@ -31,16 +31,16 @@
             </p>
           </form>
         </li>
-        <li>
-          <a class="main-nav__item add-to-basket" href="">Корзина: пока пуста</a>
+        <li class="interactive-list__item">
+          <a class="add-to-basket" href="">Корзина: пока пуста</a>
         </li>
       </ul>
-      <ul class="shopping-list">
-        <li>
-          <a class="main-nav__item new-products-link" href="">Новые поступления</a>
+      <ul class="shopping-list main-nav__item">
+        <li class="shopping-list__item">
+          <a class="new-products-link" href="">Новые поступления</a>
         </li>
-        <li>
-          <a class="main-nav__ item sales-link" href="">Распродажа</a>
+        <li class="shopping-list__item">
+          <a class="sales-link" href="">Распродажа</a>
         </li>
       </ul>
       <span class="main-nav__item about-delivery">
@@ -64,7 +64,7 @@
 					<p class="catalog-item__description">
 						Рост 30&nbsp;см, вес 200&nbsp;г
 					</p>
-					<div class="purchase-wrapper">
+					<div class="catalog-item__price-wrapper">
 						<span class="catalog-item__price">200&nbsp;руб</span>
 						<a class="catalog-item__to-basket" href="" aria-label="Добавить в корзину"></a>
 					</div>
@@ -82,7 +82,7 @@
 					<p class="catalog-item__description">
 						Диаметр 15&nbsp;см, высота 10&nbsp;см
 					</p>
-					<div class="purchase-wrapper">
+					<div class="catalog-item__price-wrapper">
 						<span class="catalog-item__price">690&nbsp;руб</span>
 						<a class="catalog-item__to-basket" href="" aria-label="Добавить в корзину"></a>
 					</div>
@@ -101,7 +101,7 @@
 					<p class="catalog-item__description">
 						Диаметр 30&nbsp;см, высота&nbsp;30 см
 					</p>
-					<div class="purchase-wrapper">
+					<div class="catalog-item__price-wrapper">
 						<span class="catalog-item__price">1500&nbsp;руб</span>
 						<a class="catalog-item__to-basket" href="" aria-label="Добавить в корзину"></a>
 					</div>
