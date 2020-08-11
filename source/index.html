@@ -4,9 +4,10 @@
 <head>
   <meta charset="utf-8">
   <title>«Мишка»: главная страница</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body class="page__body">
+<body class="page__body page-container">
   <header class="page-header">
     <a class="page-header__logo">
       <img src="https://via.placeholder.com/86x35" width="86" height="35" alt="Логотип магазина «Мишка»">
@@ -15,24 +16,24 @@
       <button class="page-header__button" type="button"></button>
       <ul class="link-lists main-nav__item">
         <li class="link-lists__item">
-          <a class="catalog-link" href="catalog.html">Каталог товаров</a>
+          <a class="catalog-link page-header__link" href="catalog.html">Каталог товаров</a>
         </li>
         <li class="link-lists__item">
-          <a class="form-link" href="form.html">Вязание на заказ</a>
+          <a class="form-link page-header__link" href="form.html">Вязание на заказ</a>
         </li>
       </ul>
       <ul class="interactive-list main-nav__item">
         <li class="interactive-list__item">
           <form class="search-field" action="https://echo.htmlacademy.ru/courses" method="get">
-            <p>
+            <p class="search-field__item">
               <label for="search-field">Поиск по сайту</label>
-              <input type="search" name="search" id="search-field" aria-label="Поиск по сайту">
+              <input class="search-field__input" type="search" name="search" id="search-field" aria-label="Поиск по сайту">
               <button type="submit"></button>
             </p>
           </form>
         </li>
         <li class="interactive-list__item">
-          <a class="add-to-basket" href="">Корзина: пока пуста</a>
+          <a class="add-to-basket page-header__link" href="">Корзина: пока пуста</a>
         </li>
       </ul>
       <ul class="shopping-list main-nav__item">
@@ -59,15 +60,15 @@
       </p>
       <ul class="main-list">
         <li class="main-list__item main-list__item_shopping-card_interior">
-          <a href="">Предметы интерьера</a>
+          <a class="main-list__link" href="">Предметы интерьера</a>
         </li>
         <li class="main-list__item main-list__item_shopping-card_toys">
-          <a href="">Детские игрушки</a>
+          <a class="main-list__link" class="" href="">Детские игрушки</a>
         </li>
       </ul>
     </section>
-    <article class="best-product">
-      <h2 class="best-product__title">Вязаные корзинки</h2>
+    <article class="best-product main-container">
+      <h2 class="best-product__title page-main__title_h2">Вязаные корзинки</h2>
       <span class="best-product__sign">Товар недели</span>
       <p class="best-product__description">
         Экологически чистая пряжа,
@@ -96,7 +97,7 @@
       </div>
     </article>
     <article class="main-advantages">
-      <h2 class="main-advantages__title">Коротко о нас</h2>
+      <h2 class="main-advantages__title page-main__title_h2">Коротко о нас</h2>
       <ul class="main-advantages__list">
         <li class="main-advantages__item main-advantages__item_logo_flower">
           Экологически
@@ -147,7 +148,7 @@
       </div>
     </article>
     <section class="contacts">
-      <h2 class="contacts__title">Контакты</h2>
+      <h2 class="contacts__title page-main__title_h2">Контакты</h2>
       <p class="contacts__wrapper email-wrapper">
         <span class="email-wrapper__name">e-mail:</span>
         <a class="email-wrapper__email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
@@ -188,5 +189,4 @@
   </footer>
 
 </body>
-
 </html>

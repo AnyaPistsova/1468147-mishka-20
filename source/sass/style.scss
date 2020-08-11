@@ -1,1 +1,243 @@
-// Начните писать стили здесь
+// Colors start
+
+$black: #000000;
+
+$darkgrey: #444444;
+$shadowgrey: #ececec;
+$lightgrey: #f1f1f1;
+
+$white: #ffffff;
+
+$highlightgreen: #62d1ba;
+$lightgreen: #63d1bb;
+$darkgreen: #56c3b2;
+
+// Colors end
+
+// Fonts start
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src:
+    url("../fonts/opensans.woff2") format("woff2"),
+    url("../fonts/opensans.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src:
+    url("../fonts/opensansbold.woff2") format("woff2"),
+    url("../fonts/opensansbold.woff") format("woff");
+}
+
+// Fonts end
+
+// main-button start
+
+
+
+// main-button end
+
+// Global start
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.page {
+  height: 100%;
+  font-size: 15px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+}
+
+.page__body {
+  min-height: 100%;
+  margin: 0;
+  background-color: $white;
+  color: $black;
+
+  ul {
+    list-style: none;
+  }
+}
+
+.page-container {
+  width: 320px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-container {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.page-main__title_h2 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+  color: $black;
+}
+
+// Global end
+
+// Header start
+
+.page-header {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.page-header__link {
+  text-decoration: none;
+  color: $black;
+}
+
+.shopping-list,
+.search-field__input,
+.about-delivery {
+  display: none;
+}
+
+.main-nav__item {
+  padding: 0;
+  padding-left: 76px;
+}
+
+.page-header__logo {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.search-field {
+  font-size: 17px;
+}
+
+.search-field__item {
+  padding: 0;
+  margin: 0;
+}
+
+// Header end
+
+// Footer start
+
+.page-footer {
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 18px;
+  background-color: $lightgrey;
+}
+
+// Footer end
+
+// main-menu start
+
+.main-menu {
+  font-weight: bold;
+}
+
+.main-menu__description {
+  padding: 0;
+  margin: 0;
+  margin-top: 75px;
+  margin-bottom: 115px;
+  font-size: 27px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.main-list {
+  padding: 0;
+}
+
+.main-list__item {
+  padding-top: 24px;
+  padding-bottom: 31px;
+  padding-left: 30px;
+  padding-right: 160px;
+
+  &_shopping-card_interior {
+    background-color: $lightgreen;
+  }
+
+  &_shopping-card_toys {
+    background-color: $darkgreen
+  }
+}
+
+.main-list__link {
+  font-size: 19px;
+  line-height: 24px;
+  text-decoration: none;
+  color: $white;
+}
+
+// main-menu end
+
+// best-product start
+
+.best-product {
+  padding-top: 30px;
+  padding-bottom: 35px;
+  line-height: 24px;
+  color: $darkgrey;
+}
+
+.best-product__sign {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $lightgreen;
+}
+
+.best-product__description {
+  margin: 0;
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+.features-table {
+  line-height: 20px;
+  margin-bottom: 29px;
+}
+
+.features-table__parameter {
+  padding-top: 12px;
+  padding-bottom: 15px;
+  padding-right: 25px;
+  font-weight: normal;
+  text-align: left;
+}
+
+.best-product__image {
+  margin-bottom: 25px;
+}
+
+// best-product end
