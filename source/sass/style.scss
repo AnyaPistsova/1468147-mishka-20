@@ -40,7 +40,21 @@ $darkgreen: #56c3b2;
 
 // main-button start
 
-
+.main-button {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  display: inline-block;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border: 2px $darkgrey solid;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $darkgrey;
+  background-color: $white;
+  cursor: pointer;
+}
 
 // main-button end
 
@@ -120,13 +134,22 @@ img {
 
 .shopping-list,
 .search-field__input,
+.search-field__button,
 .about-delivery {
   display: none;
 }
 
 .main-nav__item {
   padding: 0;
+  margin: 0;
+}
+
+.link-lists__item,
+.interactive-list__item {
+  padding-top: 28.5px;
+  padding-bottom: 26.5px;
   padding-left: 76px;
+  border-bottom: 1px $shadowgrey solid;
 }
 
 .page-header__logo {
@@ -160,13 +183,16 @@ img {
 
 .main-menu {
   font-weight: bold;
+  background-image: url("../img/hero-mobile@1x.jpg");
+  background-position: 50% -37%;
+  background-repeat: no-repeat;
 }
 
 .main-menu__description {
   padding: 0;
   margin: 0;
-  margin-top: 75px;
-  margin-bottom: 115px;
+  padding-top: 75px;
+  padding-bottom: 115px;
   font-size: 27px;
   line-height: 30px;
   text-align: center;
@@ -228,16 +254,100 @@ img {
   margin-bottom: 29px;
 }
 
+.features-table__value {
+  border-bottom: 1px $shadowgrey solid;
+}
+
 .features-table__parameter {
   padding-top: 12px;
   padding-bottom: 15px;
   padding-right: 25px;
   font-weight: normal;
   text-align: left;
+  border-bottom: 1px $shadowgrey solid;
 }
 
 .best-product__image {
   margin-bottom: 25px;
 }
 
+.best-product__booking {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.best-product__price {
+  display: block;
+  margin-bottom: 24.5px;
+}
+
 // best-product end
+
+//main-advantages start
+
+.main-advantages {
+  margin-bottom: 58px;
+}
+
+.main-advantages__list {
+  padding: 0;
+  margin: 0;
+  margin-top: 28px;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+}
+
+.main-advantages__item {
+  padding-top: 55px;
+}
+
+// feedback start
+
+.feedback {
+  margin-bottom: 90px;
+}
+
+.feedback-quote,
+.feedback-quote__content,
+.feedback-quote__author {
+  padding: 0;
+  margin: 0;
+}
+
+.feedback-quote__content {
+  margin-top: 14px;
+  margin-bottom: 33px;
+  line-height: 30px;
+}
+
+.feedback-quote__author-wrapper {
+  font-size: 17px;
+  line-height: 24px;
+  margin-bottom: 30px;
+}
+
+.feedback-quote__author {
+  font-weight: bold;
+}
+
+.feedback__button {
+  background-color: $white;
+}
+
+// feedback end
+
+// contacts start
+
+.email-wrapper__email {
+  text-decoration: none;
+  color: $darkgrey;
+}
+
+.address-wrapper__address {
+  font-style: normal;
+}
+
+// contacts end
