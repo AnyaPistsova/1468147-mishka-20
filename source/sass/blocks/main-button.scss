@@ -1,0 +1,15 @@
+.main-button {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  display: inline-block;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border: 2px $darkgrey solid;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $darkgrey;
+  background-color: $white;
+  cursor: pointer;
+}

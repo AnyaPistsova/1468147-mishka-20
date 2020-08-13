@@ -1,0 +1,43 @@
+.page-header {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.page-header__link {
+  text-decoration: none;
+  color: $black;
+}
+
+.shopping-list,
+.search-field__input,
+.search-field__button,
+.about-delivery {
+  display: none;
+}
+
+.main-nav__item {
+  padding: 0;
+  margin: 0;
+}
+
+.link-lists__item,
+.interactive-list__item {
+  padding-top: 28.5px;
+  padding-bottom: 26.5px;
+  padding-left: 76px;
+  border-bottom: 1px $shadowgrey solid;
+}
+
+.page-header__logo {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.search-field {
+  font-size: 17px;
+}
+
+.search-field__item {
+  padding: 0;
+  margin: 0;
+}
