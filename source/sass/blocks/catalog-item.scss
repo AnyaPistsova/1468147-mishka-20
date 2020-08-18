@@ -1,31 +1,13 @@
-.email-wrapper__email {
-  text-decoration: none;
-  color: $darkgrey;
-}
-
-.address-wrapper__address {
-  font-style: normal;
-}
-
-// contacts end
-
-// cataog-list start
-
-.cataog-list,
 .catalog-item__title,
 .catalog-item__description {
   padding: 0;
   margin: 0;
 }
 
-.cataog-list {
-  margin-top: 30px;
-}
-
 .catalog-item {
-  padding-bottom: 26.5px;
+  padding-bottom: 27px;
   margin-bottom: 30px;
-  border: 1px $shadowgrey solid;
+  border: $border-base-style;
 }
 
 .catalog-item__wrapper {
@@ -45,9 +27,9 @@
 }
 
 .catalog-item__description {
-  padding-bottom: 17.5px;
-  margin-bottom: 22.5px;
-  border-bottom: 1px $shadowgrey solid;
+  padding-bottom: 18px;
+  margin-bottom: 23px;
+  border-bottom: $border-base-style;
   font-size: 13px;
   line-height: 30px;
 }

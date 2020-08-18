@@ -2,5 +2,9 @@
   font-weight: bold;
   font-size: 19px;
   line-height: 18px;
-  background-color: $lightgrey;
+  background-color: $background-special-color;
+}
+
+.social-media-list {
+  @include list-state;
 }

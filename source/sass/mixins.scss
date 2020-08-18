@@ -1,0 +1,13 @@
+@mixin list-state {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@mixin index-title {
+  margin: 0;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+  color: $black;
+}

@@ -1,0 +1,10 @@
+.link-lists {
+  @include list-state;
+}
+
+.link-lists__item {
+  padding-top: 29px;
+  padding-bottom: 27px;
+  padding-left: 76px;
+  border-bottom: $border-base-style;
+}

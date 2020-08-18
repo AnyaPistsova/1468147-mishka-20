@@ -1,0 +1,10 @@
+.interactive-list {
+  @include list-state;
+}
+
+.interactive-list__item {
+  padding-top: 29px;
+  padding-bottom: 27px;
+  padding-left: 76px;
+  border-bottom: $border-base-style;
+}

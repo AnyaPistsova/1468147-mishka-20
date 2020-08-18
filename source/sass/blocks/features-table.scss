@@ -1,0 +1,17 @@
+.features-table {
+  line-height: 20px;
+  margin-bottom: 29px;
+}
+
+.features-table__value {
+  border-bottom: $border-base-style;
+}
+
+.features-table__parameter {
+  padding-top: 12px;
+  padding-bottom: 15px;
+  padding-right: 25px;
+  font-weight: normal;
+  text-align: left;
+  border-bottom: $border-base-style;
+}

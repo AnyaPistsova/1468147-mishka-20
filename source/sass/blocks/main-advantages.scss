@@ -3,8 +3,7 @@
 }
 
 .main-advantages__list {
-  padding: 0;
-  margin: 0;
+  @include list-state;
   margin-top: 28px;
   font-weight: bold;
   font-size: 17px;
@@ -13,4 +12,8 @@
 
 .main-advantages__item {
   padding-top: 55px;
+}
+
+.main-advantages__title {
+  @include index-title;
 }

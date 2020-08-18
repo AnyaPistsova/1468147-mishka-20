@@ -1,7 +1,7 @@
 .video {
   padding-bottom: 33px;
   margin-bottom: 58px;
-  border: 1px $shadowgrey solid;
+  border: $border-base-style;
 }
 
 .video__title,
@@ -11,9 +11,9 @@
 }
 
 .video__title {
-  padding-top: 21.5px;
+  padding-top: 22px;
   padding-left: 91px;
-  margin-bottom: 26.5px;
+  margin-bottom: 27px;
   font-size: 17px;
 }
 

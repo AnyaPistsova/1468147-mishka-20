@@ -1,98 +1,13 @@
-// Fonts start
-
-@font-face {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: normal;
-  font-display: swap;
-  src:
-    url("../fonts/opensans.woff2") format("woff2"),
-    url("../fonts/opensans.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: bold;
-  font-display: swap;
-  src:
-    url("../fonts/opensansbold.woff2") format("woff2"),
-    url("../fonts/opensansbold.woff") format("woff");
-}
-
-// Fonts end
-
-// Global start
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 .page {
   height: 100%;
-  font-size: 15px;
-  line-height: 24px;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-style: normal;
-}
-
-.page__body {
-  min-height: 100%;
-  margin: 0;
-  background-color: $white;
-  color: $black;
-
-  ul {
-    list-style: none;
-  }
 }
 
 .page-main__title {
   margin: 0;
-  padding-top: 73.5px;
-  padding-bottom: 73.5px;
+  padding-top: 74px;
+  padding-bottom: 74px;
   font-size: 27px;
   line-height: 30px;
   text-align: center;
-  background-color: $lightgrey;
+  background-color: $background-special-color;
 }
-
-.page-main__title_h2 {
-  margin: 0;
-  font-weight: bold;
-  font-size: 25px;
-  line-height: 30px;
-  color: $black;
-}
-
-// Global end
-
-// Containers start
-
-.page-container {
-  width: 320px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.main-container {
-  padding-left: 30px;
-  padding-right: 30px;
-}
-// Containers end
