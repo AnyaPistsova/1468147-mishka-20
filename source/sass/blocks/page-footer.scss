@@ -8,3 +8,7 @@
 .social-media-list {
   @include list-state;
 }
+
+.page-footer__logo {
+  display: none;
+}
