@@ -5,10 +5,6 @@
   background-color: $background-special-color;
 }
 
-.social-media-list {
-  @include list-state;
-}
-
 .page-footer__logo {
   display: none;
 }
