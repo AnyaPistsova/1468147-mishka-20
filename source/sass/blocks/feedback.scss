@@ -1,0 +1,11 @@
+.feedback {
+  margin-bottom: 90px;
+}
+
+.feedback__button {
+  background-color: $white;
+}
+
+.feedback__title {
+  @include index-title;
+}

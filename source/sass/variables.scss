@@ -1,0 +1,30 @@
+// Colors
+
+$white: #ffffff;
+$grey--lightest: #f1f1f1;
+$grey--light: #ececec;
+$grey--dark: #444444;
+$black: #000000;
+$green--lightest: #59d5bc;
+$green--light: #62d1ba;
+$green: #63d1bb;
+$green--dark: #56c3b2;
+$green--darkest : #46c1ae;
+
+// Colors: specification
+
+$font-base-color: $grey--dark;
+$link-color--hover: opacify($black, 0.6);
+$link-color--active: opacify($black, 0.3);
+$icon-base-color: opacify($black, 0.2);
+$input-base-color: opacify($grey--dark, 0.3);
+$border-base-color: $grey--light;
+$background-special-color: $grey--lightest;
+
+// Fonts
+
+$font-family-base: "Open Sans", "Arial", sans-serif;
+
+// Border
+
+$border-base-style: 1px $border-base-color solid;

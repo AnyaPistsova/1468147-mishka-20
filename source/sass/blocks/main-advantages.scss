@@ -1,0 +1,19 @@
+.main-advantages {
+  margin-bottom: 58px;
+}
+
+.main-advantages__list {
+  @include list-state;
+  margin-top: 28px;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+}
+
+.main-advantages__item {
+  padding-top: 55px;
+}
+
+.main-advantages__title {
+  @include index-title;
+}

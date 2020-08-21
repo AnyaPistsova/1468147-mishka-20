@@ -1,0 +1,24 @@
+.main-list {
+  @include list-state;
+}
+
+.main-list__item {
+  padding-top: 24px;
+  padding-bottom: 31px;
+  padding-left: 30px;
+  padding-right: 160px;
+
+  &_shopping-card_interior {
+    background-color: $green--light;
+  }
+
+  &_shopping-card_toys {
+    background-color: $green--dark;
+  }
+}
+
+.main-list__link {
+  font-size: 19px;
+  text-decoration: none;
+  color: $white;
+}
