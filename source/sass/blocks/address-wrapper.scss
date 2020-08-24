@@ -1,3 +1,8 @@
-.address-wrapper__address {
+.address-wrapper {
   font-style: normal;
+}
+
+.address-wrapper__address {
+  @include reset-style;
+  display: inline;
 }

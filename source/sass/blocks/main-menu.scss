@@ -6,8 +6,7 @@
 }
 
 .main-menu__description {
-  padding: 0;
-  margin: 0;
+  @include reset-style;
   padding-top: 75px;
   padding-bottom: 120px;
   font-size: 27px;

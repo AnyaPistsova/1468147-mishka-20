@@ -1,8 +1,7 @@
 .feedback-quote,
 .feedback-quote__content,
 .feedback-quote__author {
-  padding: 0;
-  margin: 0;
+  @include reset-style;
 }
 
 .feedback-quote__content {

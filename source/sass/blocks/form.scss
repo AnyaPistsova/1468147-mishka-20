@@ -4,45 +4,27 @@
 }
 
 .form__fieldset {
-  padding: 0;
-  margin: 0;
-  border: 1px $green--light solid;
+  @include reset-style;
   border-width: 0;
   position: relative;
-  
+
   &_section_tel::after {
-    content: "";
-    top: 37%;
-    right: 2%;    
+    @include form-icon;
     width: 25px;
     height: 24px;
     background-image: url("../../img/icon-phone.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    position: absolute;
-    background-size: 100%;
-    z-index: 10;
-    opacity: 0.2;
   }
 
   &_section_email::after {
-    content: "";
-    top: 37%;
-    right: 2%;
+    @include form-icon;
     width: 32px;
     height: 26px;
     background-image: url("../../img/icon-mail.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    position: absolute;
-    z-index: 10;
-    opacity: 0.2;
   }
 }
 
 .form__item {
-  padding: 0;
-  margin: 0;
+  @include reset-style;
 
   &_section_name {
     margin-bottom: 22px;
@@ -118,12 +100,12 @@
 }
 
 .form__input {
+  @include reset-style;
   width: 100%;
-  padding: 0;
   padding-bottom: 16px;
-  margin: 0;
   border: none;
-  border-bottom: 2px $black solid;
+  border-bottom: $border-bold-style;
+  font-weight: normal;
   line-height: 19px;
   position: relative;
   z-index: 1;
@@ -140,31 +122,30 @@
   line-height: 18px;
   position: relative;
   display: block;
-  cursor: pointer;
   user-select: contain;
 
   &_section_color {
-    padding-left: 65px;
-    margin-bottom: 45px;
+    @include box-label;
   }
 
   &_section_type {
-    padding-left: 65px;
-    margin-bottom: 45px;
+    @include box-label;
   }
 }
 
 .form__input_type_checkbox + .form__label::before {
+  cursor: pointer;
   content: "";
   top: -60%;
   left: 0;
-  border: 2px $grey--dark solid;
+  border: $border-bold-style;
   width: 38px;
   height: 39px;
   position: absolute;
 }
 
 .form__input_type_checkbox:checked + .form__label::after {
+  cursor: pointer;
   content: "";
   top: 7%;
   left: 3%;
@@ -178,9 +159,10 @@
 }
 
 .form__input_type_radio + .form__label::before {
+  cursor: pointer;
   left: -0.5%;
   content: "";
-  border: 2px $grey--dark solid;
+  border: $border-bold-style;
   border-radius: 50%;
   width: 40px;
   height: 42px;
@@ -196,6 +178,7 @@
 }
 
 .form__input_type_radio:checked + .form__label::after {
+  cursor: pointer;
   content: "";
   top: 8%;
   left: 4.8%;
@@ -210,7 +193,8 @@
   width: 90%;
   padding-top: 17px;
   padding-left: 17px;
-  border: 2px $grey--dark solid;
+  border: $border-bold-style;
+  font-weight: normal;
 
   &::placeholder {
     opacity: 0.3;
@@ -220,8 +204,7 @@
 }
 
 .form__sign {
-  padding: 0;
-  margin: 0;
+  @include reset-style;
   margin-bottom: 30px;
   font-weight: normal;
   font-size: 14px;
