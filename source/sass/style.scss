@@ -1,5 +1,6 @@
-//normalize.css
-@import "../css/normalize.css";
+//normalize.scss
+@import "../../node_modules/normalize-scss/sass/normalize.scss";
+@include normalize();
 
 //fonts.scss
 @import "fonts.scss";
@@ -15,6 +16,9 @@
 
 //page.scss
 @import "blocks/page.scss";
+
+//page-main.scss
+@import "blocks/page-main.scss";
 
 //page-header.scss
 @import "blocks/page-header.scss";
@@ -70,7 +74,7 @@
 //feedback.scss
 @import "blocks/feedback.scss";
 
-//feedback-quote
+//feedback-quote.scss
 @import "blocks/feedback-quote.scss";
 
 //form.scss
