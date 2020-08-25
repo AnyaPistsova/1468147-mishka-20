@@ -21,7 +21,11 @@ $background-special-color: $grey--lightest;
 
 $font-family-base: "Open Sans", "Arial", sans-serif;
 
-// Border
+// Borders
 
 $border-base-style: 1px $border-base-color solid;
 $border-bold-style: 2px $grey--dark solid;
+
+// Margins
+
+$form-special-margin: 35px;

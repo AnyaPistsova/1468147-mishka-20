@@ -29,6 +29,8 @@
 }
 
 @mixin box-label {
+  cursor: pointer;
+  padding-top: 12px;
+  padding-bottom: 12px;
   padding-left: 65px;
-  margin-bottom: 45px;
 }
