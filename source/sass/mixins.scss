@@ -4,10 +4,33 @@
   list-style: none;
 }
 
+@mixin reset-style {
+  padding: 0;
+  margin: 0;
+}
+
 @mixin index-title {
   margin: 0;
   font-weight: bold;
   font-size: 25px;
   line-height: 30px;
   color: $black;
+}
+
+@mixin form-icon {
+  content: "";
+  position: absolute;
+  top: 37%;
+  right: 2%;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  z-index: 10;
+  opacity: 0.2;
+}
+
+@mixin box-label {
+  cursor: pointer;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 65px;
 }

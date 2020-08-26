@@ -1,7 +1,6 @@
 .catalog-item__title,
 .catalog-item__description {
-  padding: 0;
-  margin: 0;
+  @include reset-style;
 }
 
 .catalog-item {

@@ -1,6 +1,5 @@
 //normalize.scss
-@import "../../node_modules/normalize-scss/sass/normalize.scss";
-@include normalize();
+@import "normalize.scss";
 
 //fonts.scss
 @import "fonts.scss";
@@ -47,6 +46,9 @@
 //main-list.scss
 @import "blocks/main-list.scss";
 
+//main-form.scss
+@import "blocks/main-form.scss";
+
 //about-delivery.scss
 @import "blocks/about-delivery.scss";
 
@@ -74,6 +76,9 @@
 //feedback-quote.scss
 @import "blocks/feedback-quote.scss";
 
+//form.scss
+@import "blocks/form.scss";
+
 //interactive-list.scss
 @import "blocks/interactive-list.scss";
 
@@ -85,6 +90,9 @@
 
 //shopping-list.scss
 @import "blocks/shopping-list.scss";
+
+//social-media-list.scss
+@import "blocks/social-media-list.scss";
 
 //video.scss
 @import "blocks/video.scss";

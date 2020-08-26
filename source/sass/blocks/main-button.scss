@@ -1,11 +1,12 @@
 .main-button {
+  width: 100%;
   font-weight: bold;
   font-size: 18px;
   line-height: 20px;
   display: inline-block;
   padding-top: 16px;
   padding-bottom: 16px;
-  border: 2px $grey--dark solid;
+  border: $border-bold-style;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
