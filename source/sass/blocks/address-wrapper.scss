@@ -1,8 +1,13 @@
 .address-wrapper {
   font-style: normal;
+  display: flex;
+  justify-content: space-between;
 }
 
 .address-wrapper__address {
   @include reset-style;
-  display: inline;
+}
+
+.address-wrapper__name {
+  margin-right: 32px;
 }

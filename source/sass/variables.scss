@@ -3,6 +3,7 @@
 $white: #ffffff;
 $grey--lightest: #f1f1f1;
 $grey--light: #ececec;
+$grey: #E5E5E5;
 $grey--dark: #444444;
 $black: #000000;
 $green--lightest: #59d5bc;
@@ -20,6 +21,12 @@ $background-special-color: $grey--lightest;
 // Fonts
 
 $font-family-base: "Open Sans", "Arial", sans-serif;
+
+// Viewports
+
+$tablet-width: 768px;
+$desktop-width: 1150px;
+$mobile-width-only: 767px;
 
 // Borders
 

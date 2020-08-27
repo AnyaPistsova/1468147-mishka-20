@@ -2,10 +2,33 @@
   margin-bottom: 90px;
 }
 
+.feedback__buttons-wrapper {
+  margin-bottom: 38px;
+  display: flex;
+  justify-content: space-between;
+}
+
 .feedback__button {
+  padding-top: 13px;
+  padding-bottom: 13px;
+  display: inline-block;
   background-color: $white;
+  border: $border-base-style;
+  flex-grow: 1;
+}
+
+.feedback__button_next {
+  border-right: 0;
+}
+
+.feedback__write-button {
+  width: 100%;
 }
 
 .feedback__title {
   @include index-title;
+}
+
+.feedback__quote {
+  margin-bottom: 30px;
 }

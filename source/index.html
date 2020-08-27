@@ -2,7 +2,7 @@
 <html class="page" lang="ru">
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" name="viewport" content="width=device-width,initial-scale=1">
   <title>«Мишка»: главная страница</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -147,43 +147,47 @@
       <div class="feedback__buttons-wrapper">
         <button class="feedback__button feedback__button_next" type="button">Назад</button>
         <button class="feedback__button feedback__button_back" type="button">Вперёд</button>
-        <a class="feedback__write-button main-button" href="">Написать</a>
       </div>
+      <a class="feedback__write-button main-button" href="">Написать</a>
     </article>
-    <section class="contacts main-container">
-      <h2 class="contacts__title">Контакты</h2>
-      <p class="contacts__wrapper email-wrapper">
-        <span class="email-wrapper__name">e-mail:</span>
-        <a class="email-wrapper__email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-      </p>
-      <address class="contacts__wrapper address-wrapper">
-        <span class="address-wrapper__name">адрес:</span>
-        <p class="address-wrapper__address">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
-      </address>
+    <section class="contacts">
+      <div class="main-container">
+        <h2 class="contacts__title">Контакты</h2>
+        <p class="contacts__wrapper email-wrapper">
+          <span class="email-wrapper__name">e-mail:</span>
+          <a class="email-wrapper__email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+        </p>
+        <address class="contacts__wrapper address-wrapper">
+          <span class="address-wrapper__name">адрес:</span>
+          <p class="address-wrapper__address">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
+        </address>
+      </div>
       <div class="contacts__map contacts-map">
         <img src="img/map-mobile@1x.jpg" width="320" height="454"
           alt="Карта с расположением офиса по адресу г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101 ">
       </div>
-      <a class="contacts__button main-button" href="">Напишите нам</a>
+      <div class="main-container">
+        <a class="contacts__button main-button" href="">Напишите нам</a>
+      </div>
     </section>
   </main>
 
   <footer class="page-footer">
-    <a class="page-footer__logo">
+    <a class="page-footer__logo main-container">
       <img src="img/logo-footer.svg" width="86" height="35" alt="Логотип магазина «Мишка»">
     </a>
     <ul class="social-media-list">
       <li class="social-media-list__item social-media-list__item_link_instagram">
-        <a href="" aria-label="Перейти на страницу магазина «Мишка» в Instagram"></a>
+        <a href="" aria-label="Перейти на страницу магазина «Мишка» в Instagram">I</a>
       </li>
       <li class="social-media-list__item social-media-list__item_link_facebook">
-        <a href="" aria-label="Перейти на страницу магазина «Мишка» в Facebook"></a>
+        <a href="" aria-label="Перейти на страницу магазина «Мишка» в Facebook">F</a>
       </li>
       <li class="social-media-list__item social-media-list__item_link_twitter">
-        <a href="" aria-label="Перейти на страницу магазина «Мишка» в Twitter"></a>
+        <a href="" aria-label="Перейти на страницу магазина «Мишка» в Twitter">T</a>
       </li>
     </ul>
-    <div class="developer-info">
+    <div class="developer-info main-container">
       <span class="developer-info__text">Разработано</span>
       <a class="developer-info__link" href="https://htmlacademy.ru/intensive/adaptive"
         aria-label="Перейти на сайт HTML Academy">
@@ -193,4 +197,5 @@
   </footer>
 
 </body>
+
 </html>

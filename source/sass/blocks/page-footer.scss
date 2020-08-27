@@ -1,10 +1,21 @@
 .page-footer {
+  padding-top: 25px;
+  padding-bottom: 23px;
   font-weight: bold;
   font-size: 19px;
   line-height: 18px;
   background-color: $background-special-color;
+    @media (min-width: $tablet-width) {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
 }
 
 .page-footer__logo {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
