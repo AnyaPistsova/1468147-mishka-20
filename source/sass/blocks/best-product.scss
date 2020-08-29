@@ -1,7 +1,22 @@
 .best-product {
-  padding-top: 30px;
-  padding-bottom: 35px;
+  margin-bottom: 35px;
   color: $font-base-color;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 52px;
+  }
+}
+
+.best-product__info-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
 }
 
 .best-product__sign {
@@ -10,29 +25,82 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $green;
+
+  @media (min-width: $tablet-width) {
+    width: 100px;
+    text-align: center;
+  }
 }
 
 .best-product__description {
   @include reset-style;
   margin-top: 18px;
   margin-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-bottom: 48px;
+    width: 295px;
+    height: fit-content;
+    font-size: 17px;
+    line-height: 30px;
+  }
 }
 
 .best-product__image {
   margin-bottom: 25px;
+  display: inline-block;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    width: 334px;
+  }
 }
 
 .best-product__booking {
   font-weight: bold;
   font-size: 17px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -105px;
+    width: 295px;
+  }
 }
 
 .best-product__price {
   display: block;
   margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .best-product__title {
   @include index-title;
+}
+
+.best-product__title-wrapper {
+  width: 100%;
+  font-size: 17px;
+  line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 38px;
+    line-height: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.best-product__table {
+  @media (min-width: $tablet-width) {
+    width: 295px;
+    height: fit-content;
+    font-size: 15px;
+    line-height: 20px;
+  }
 }

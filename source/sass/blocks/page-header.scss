@@ -9,8 +9,14 @@
 }
 
 .page-header__logo {
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 22px;
+  margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: start;
+  }
 }
 
 .page-header__button {

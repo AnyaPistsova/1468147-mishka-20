@@ -1,5 +1,10 @@
 .main-list {
   @include list-state;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .main-list__item {
@@ -10,15 +15,26 @@
   &_shopping-card_toys {
     background-color: $green--dark;
   }
+
+  @media (min-width: $tablet-width) {
+    flex-grow: 1;
+  }
 }
 
 .main-list__link {
+  width: 130px;
   display: block;
   padding-top: 24px;
   padding-bottom: 31px;
   padding-left: 30px;
-  padding-right: 160px;
   font-size: 19px;
   text-decoration: none;
   color: $white;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 34px;
+    padding-left: 36px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

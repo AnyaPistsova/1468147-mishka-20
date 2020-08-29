@@ -1,4 +1,5 @@
 .address-wrapper {
+  @include reset-style;
   font-style: normal;
   display: flex;
   justify-content: space-between;

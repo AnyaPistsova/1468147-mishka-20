@@ -1,34 +1,44 @@
 .feedback {
   margin-bottom: 90px;
-}
-
-.feedback__buttons-wrapper {
-  margin-bottom: 38px;
   display: flex;
-  justify-content: space-between;
-}
+  flex-wrap: wrap;
+  line-height: 30px;
 
-.feedback__button {
-  padding-top: 13px;
-  padding-bottom: 13px;
-  display: inline-block;
-  background-color: $white;
-  border: $border-base-style;
-  flex-grow: 1;
-}
-
-.feedback__button_next {
-  border-right: 0;
+  @media (min-width: $tablet-width) {
+    padding-top: 83px;
+    padding-bottom: 47px;
+    flex-direction: row;
+    font-size: 17px;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+  }
 }
 
 .feedback__write-button {
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    order: 0;
+    width: 175px;
+  }
 }
 
 .feedback__title {
   @include index-title;
+  margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 39px;
+    display: inline-block;
+    order: -1;
+    flex-grow: 1;
+  }
 }
 
 .feedback__quote {
   margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    order: 3;
+  }
 }

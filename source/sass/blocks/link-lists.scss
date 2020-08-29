@@ -1,10 +1,26 @@
 .link-lists {
   @include list-state;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .link-lists__item {
+  width: 100%;
   padding-top: 29px;
   padding-bottom: 27px;
   padding-left: 76px;
   border-bottom: $border-base-style;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    border: none;
+    width: 24%;
+  }
+
+  &_links_catalog {
+    border-top: $border-base-style;
+    border: none;
+  }
 }

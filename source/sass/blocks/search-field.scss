@@ -7,6 +7,12 @@
   display: none;
 }
 
+.search-field__label {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
 .search-field__item {
   @include reset-style;
 }

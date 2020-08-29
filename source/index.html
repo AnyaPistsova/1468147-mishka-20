@@ -14,19 +14,19 @@
     </a>
     <nav class="main-nav">
       <button class="page-header__button" type="button"></button>
-      <ul class="link-lists main-nav__item">
-        <li class="link-lists__item">
-          <a class="catalog-link page-header__link" href="catalog.html">Каталог товаров</a>
+      <ul class="link-lists main-nav__item main-nav__item_lists_link">
+        <li class="link-lists__item link-lists__item_links_catalog">
+          <a class="page-header__link" href="catalog.html">Каталог товаров</a>
         </li>
-        <li class="link-lists__item">
-          <a class="form-link page-header__link" href="form.html">Вязание на заказ</a>
+        <li class="link-lists__item link-lists__item_links_form">
+          <a class="page-header__link" href="form.html">Вязание на заказ</a>
         </li>
       </ul>
-      <ul class="interactive-list main-nav__item">
+      <ul class="interactive-list main-nav__item main-nav__item_lists_interactive">
         <li class="interactive-list__item">
           <form class="search-field" action="https://echo.htmlacademy.ru/courses" method="get">
             <p class="search-field__item">
-              <label for="search-field">Поиск по сайту</label>
+              <label class="search-field__label" for="search-field">Поиск по сайту</label>
               <input class="search-field__input" type="search" name="search" id="search-field"
                 aria-label="Поиск по сайту">
               <button class="search-field__button" type="submit"></button>
@@ -45,7 +45,7 @@
           <a class="sales-link" href="">Распродажа</a>
         </li>
       </ul>
-      <span class="main-nav__item about-delivery">
+      <span class="main-nav__item main-nav__item_lists_about-delivery">
         Бесплатная доставка по России
       </span>
     </nav>
@@ -69,32 +69,38 @@
       </ul>
     </section>
     <article class="best-product main-container">
-      <h2 class="best-product__title">Вязаные корзинки</h2>
-      <span class="best-product__sign">Товар недели</span>
-      <p class="best-product__description">
-        Экологически чистая пряжа,
-        ручная работа. Доступны в&nbsp;шести
-        расцветках, и&nbsp;трех размерах.
-      </p>
-      <table class="features-table">
-        <tr>
-          <th class="features-table__parameter">Цвет:</th>
-          <td class="features-table__value">«Тиффани»/серый</td>
-        </tr>
-        <tr>
-          <th class="features-table__parameter">Диаметр:</th>
-          <td class="features-table__value">25 см</td>
-        </tr>
-        <tr>
-          <th class="features-table__parameter">Высота:</th>
-          <td class="features-table__value">15 см</td>
-        </tr>
-      </table>
-      <img class="best-product__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315"
-        alt="Три вязанные корзинки разных размеров, вложенные друг в друга">
-      <div class="best-product__booking">
-        <span class="best-product__price">Цена: 990 руб.</span>
-        <button class="best-product__button main-button" type="button">Заказать</button>
+      <div class="best-product__title-wrapper">
+        <h2 class="best-product__title">Вязаные корзинки</h2>
+        <span class="best-product__sign">Товар недели</span>
+      </div>
+      <div class="best-product__info-wrapper">
+        <div class="best-product__info">
+          <p class="best-product__description">
+            Экологически чистая пряжа,
+            ручная работа. Доступны в&nbsp;шести
+            расцветках, и&nbsp;трех размерах.
+          </p>
+          <table class="best-product__table features-table">
+            <tr>
+              <th class="features-table__parameter">Цвет:</th>
+              <td class="features-table__value">«Тиффани»/серый</td>
+            </tr>
+            <tr>
+              <th class="features-table__parameter">Диаметр:</th>
+              <td class="features-table__value">25 см</td>
+            </tr>
+            <tr>
+              <th class="features-table__parameter">Высота:</th>
+              <td class="features-table__value">15 см</td>
+            </tr>
+          </table>
+        </div>
+        <img class="best-product__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315"
+          alt="Три вязанные корзинки разных размеров, вложенные друг в друга">
+        <div class="best-product__booking">
+          <span class="best-product__price">Цена: 990 руб.</span>
+          <button class="best-product__button main-button" type="button">Заказать</button>
+        </div>
       </div>
     </article>
     <article class="main-advantages main-container">
@@ -136,31 +142,35 @@
           стильными, а&nbsp;также набирают больше лайков!
         </p>
         <div class="feedback-quote__author-wrapper">
-          <p class="feedback-quote__author">
-            Анастастия Красильникова
-          </p>
-          <cite class="feedback-quote__cite">
-            @misssssiskras
-          </cite>
+          <div class="feedback-quote__cite-wrapper">
+            <p class="feedback-quote__author">
+              Анастастия Красильникова
+            </p>
+            <cite class="feedback-quote__cite">
+              @misssssiskras
+            </cite>
+          </div>
+          <div class="feedback-quote__buttons-wrapper">
+            <button class="feedback-quote__button feedback__button_next" type="button">Назад</button>
+            <button class="feedback-quote__button feedback__button_back" type="button">Вперёд</button>
+          </div>
         </div>
       </blockquote>
-      <div class="feedback__buttons-wrapper">
-        <button class="feedback__button feedback__button_next" type="button">Назад</button>
-        <button class="feedback__button feedback__button_back" type="button">Вперёд</button>
-      </div>
       <a class="feedback__write-button main-button" href="">Написать</a>
     </article>
     <section class="contacts">
       <div class="main-container">
         <h2 class="contacts__title">Контакты</h2>
-        <p class="contacts__wrapper email-wrapper">
-          <span class="email-wrapper__name">e-mail:</span>
-          <a class="email-wrapper__email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-        </p>
-        <address class="contacts__wrapper address-wrapper">
-          <span class="address-wrapper__name">адрес:</span>
-          <p class="address-wrapper__address">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
-        </address>
+        <div class="contacts__container">
+          <p class="email-wrapper">
+            <span class="email-wrapper__name">e-mail:</span>
+            <a class="email-wrapper__email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+          </p>
+          <address class="contacts__wrapper address-wrapper">
+            <span class="address-wrapper__name">адрес:</span>
+            <p class="address-wrapper__address">г. Санкт-Петербург, ул. Большая Конюшенная, д.&nbsp;19/8, офис 101</p>
+          </address>
+        </div>
       </div>
       <div class="contacts__map contacts-map">
         <img src="img/map-mobile@1x.jpg" width="320" height="454"
@@ -197,5 +207,4 @@
   </footer>
 
 </body>
-
 </html>

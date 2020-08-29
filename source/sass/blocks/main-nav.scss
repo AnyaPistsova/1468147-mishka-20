@@ -1,3 +1,21 @@
 .main-nav__item {
   @include reset-style;
+
+  &_lists_link {
+    order: 3;
+  }
+
+  &_lists_interactive {
+    order: 0;
+  }
+
+  &_lists_about-delivery {
+    display: none;
+    font-weight: normal;
+    text-align: end;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+  }
 }

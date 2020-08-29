@@ -7,6 +7,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    border-top: 0;
+  }
 }
 
 .developer-info__text {

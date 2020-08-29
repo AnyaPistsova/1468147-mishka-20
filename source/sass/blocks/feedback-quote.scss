@@ -5,16 +5,66 @@
 }
 
 .feedback-quote__content {
-  margin-top: 14px;
+  @include reset-style;
   margin-bottom: 33px;
   line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 61px;
+  }
+}
+
+.feedback-quote__author {
+  font-weight: bold;
+}
+
+.feedback-quote__cite {
+  margin-bottom: 30px;
+  font-style: normal;
+  width: 300px;
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .feedback-quote__author-wrapper {
   font-size: 17px;
   margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-right: 20px;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
-.feedback-quote__author {
-  font-weight: bold;
+.feedback-quote__buttons-wrapper {
+  margin-bottom: 38px;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    width: 140px;
+  }
+}
+
+.feedback-quote__button {
+  padding-top: 13px;
+  padding-bottom: 13px;
+  display: inline-block;
+  background-color: $white;
+  border: $border-base-style;
+  flex-grow: 1;
+
+  @media (min-width: $tablet-width) {
+    border: 0;
+  }
+}
+
+.feedback-quote__button_next {
+  border-right: 0;
 }
