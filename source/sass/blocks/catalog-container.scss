@@ -1,13 +1,9 @@
-.main-container {
+.catalog-container {
   padding-left: 30px;
   padding-right: 30px;
 
   @media (min-width: $tablet-width) {
     padding-left: 50px;
     padding-right: 50px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-left: 175px;
   }
 }

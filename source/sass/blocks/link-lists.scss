@@ -1,26 +1,42 @@
 .link-lists {
-  @include list-state;
-
   @media (min-width: $tablet-width) {
     display: flex;
   }
 }
 
 .link-lists__item {
+  display: block;
   width: 100%;
   padding-top: 29px;
   padding-bottom: 27px;
-  padding-left: 76px;
   border-bottom: $border-base-style;
+  z-index: 5;
 
   @media (min-width: $tablet-width) {
     padding: 0;
     border: none;
-    width: 24%;
+    flex-basis: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-basis: 50%;
   }
 
   &_links_catalog {
     border-top: $border-base-style;
-    border: none;
+
+    @media (min-width: $tablet-width) {
+      border: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      border-right: 1px $grey-darker solid;
+    }
+  }
+
+  &_links_form {
+    @media (min-width: $desktop-width) {
+      padding-left: 35px;
+    }
   }
 }

@@ -7,45 +7,53 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body class="page__body page-container">
-  <header class="page-header">
-    <a class="page-header__logo" href="index.html">
-      <img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип магазина «Мишка»">
-    </a>
+<body class="page__body page-body page-container">
+  <header class="page-header page-header__wrapper">
     <nav class="main-nav">
+      <a class="main-nav__item main-nav__item_lists_logo page-header__logo" href="index.html">
+        <img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип магазина «Мишка»">
+      </a>
       <button class="page-header__button" type="button"></button>
-      <ul class="link-lists main-nav__item">
-        <li class="link-lists__item">
-          <a class="catalog-link page-header__link" href="catalog.html">Каталог товаров</a>
+      <ul class="main-nav__item main-nav__item_lists_link link-lists">
+        <li class="link-lists__item link-lists__item_links_catalog">
+          <div class="header-container">
+            <a class="page-header__link" href="catalog.html">Каталог товаров</a>
+          </div>
         </li>
-        <li class="link-lists__item">
-          <a class="form-link page-header__link">Вязание на заказ</a>
+        <li class="link-lists__item link-lists__item_links_form">
+          <div class="header-container">
+            <a class="page-header__link" href="form.html">Вязание на заказ</a>
+          </div>
         </li>
       </ul>
-      <ul class="interactive-list main-nav__item">
+      <ul class="main-nav__item main-nav__item_lists_interactive interactive-list">
         <li class="interactive-list__item">
           <form class="search-field" action="https://echo.htmlacademy.ru/courses" method="get">
-            <p class="search-field__item">
-              <label for="search-field">Поиск по сайту</label>
-              <input class="search-field__input" type="search" name="search" id="search-field"
-                aria-label="Поиск по сайту">
-              <button class="search-field__button" type="submit"></button>
-            </p>
+            <div class="header-container">
+              <p class="search-field__item">
+                <label class="search-field__label" for="search-field">Поиск по сайту</label>
+                <input class="search-field__input" type="search" name="search" id="search-field"
+                  aria-label="Поиск по сайту">
+                <button class="search-field__button" type="submit"></button>
+              </p>
+            </div>
           </form>
         </li>
         <li class="interactive-list__item">
-          <a class="add-to-basket page-header__link" href="">Корзина: пока пуста</a>
+          <div class="header-container">
+            <a class="add-to-basket page-header__link" href="">Корзина: пока пуста</a>
+          </div>
         </li>
       </ul>
-      <ul class="shopping-list main-nav__item">
+      <ul class="main-nav__item main-nav__item_lists_shopping shopping-list">
         <li class="shopping-list__item">
-          <a class="new-products-link" href="">Новые поступления</a>
+          <a class="new-products-link page-header__link" href="">Новые поступления</a>
         </li>
         <li class="shopping-list__item">
-          <a class="sales-link" href="">Распродажа</a>
+          <a class="sales-link page-header__link" href="">Распродажа</a>
         </li>
       </ul>
-      <span class="main-nav__item about-delivery">
+      <span class="main-nav__item main-nav__item_lists_about-delivery">
         Бесплатная доставка по России
       </span>
     </nav>
@@ -145,21 +153,21 @@
   </main>
 
   <footer class="page-footer">
-    <a class="page-footer__logo" href="index.html">
+    <a class="page-footer__logo main-container" href="index.html">
       <img src="img/logo-footer.svg" width="86" height="35" alt="Логотип магазина «Мишка»">
     </a>
     <ul class="social-media-list">
       <li class="social-media-list__item social-media-list__item_link_instagram">
-        <a href="" aria-label="Перейти на страницу магазина «Мишка» в Instagram"></a>
+        <a href="" aria-label="Перейти на страницу магазина «Мишка» в Instagram">I</a>
       </li>
       <li class="social-media-list__item social-media-list__item_link_facebook">
-        <a href="" aria-label="Перейти на страницу магазина «Мишка» в Facebook"></a>
+        <a href="" aria-label="Перейти на страницу магазина «Мишка» в Facebook">F</a>
       </li>
       <li class="social-media-list__item social-media-list__item_link_twitter">
-        <a href="" aria-label="Перейти на страницу магазина «Мишка» в Twitter"></a>
+        <a href="" aria-label="Перейти на страницу магазина «Мишка» в Twitter">T</a>
       </li>
     </ul>
-    <div class="developer-info">
+    <div class="developer-info main-container">
       <span class="developer-info__text">Разработано</span>
       <a class="developer-info__link" href="https://htmlacademy.ru/intensive/adaptive"
         aria-label="Перейти на сайт HTML Academy">

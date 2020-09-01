@@ -1,0 +1,13 @@
+.main-video__content {
+  width: 668px;
+  height: 455px;
+
+  @media (min-width: $desktop-width) {
+    width: 683px;
+    height: 455px;
+  }
+}
+
+.main-video__button {
+  display: none;
+}

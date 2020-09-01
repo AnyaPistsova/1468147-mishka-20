@@ -1,6 +1,13 @@
 .features-table {
   line-height: 20px;
   margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    width: 295px;
+    height: fit-content;
+    font-size: 15px;
+    line-height: 20px;
+  }
 }
 
 .features-table__value {

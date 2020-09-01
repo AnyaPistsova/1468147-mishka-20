@@ -3,10 +3,27 @@
   margin-bottom: 45px;
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-start;
+    margin-bottom: 30px;
+    align-self: end;
+  }
 }
 
 .email-wrapper__email {
+  padding-bottom: 3px;
   text-decoration: none;
   color: $font-base-color;
   border-bottom: 1px $green--light solid;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 5px;
+  }
+}
+
+.email-wrapper__name {
+  @media (min-width: $tablet-width) {
+    margin-right: 32px;
+  }
 }

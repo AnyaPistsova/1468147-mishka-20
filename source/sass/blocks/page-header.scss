@@ -4,8 +4,20 @@
 }
 
 .page-header__link {
+  padding-left: 70px;
+  display: block;
   text-decoration: none;
   color: $black;
+  z-index: 5;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
 
 .page-header__logo {
@@ -13,12 +25,36 @@
   justify-content: center;
   margin-top: 22px;
   margin-bottom: 22px;
+  z-index: 0;
 
   @media (min-width: $tablet-width) {
     justify-content: start;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 150px;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 .page-header__button {
   display: none;
+}
+
+.page-header__wrapper {
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1150px;
+  }
 }

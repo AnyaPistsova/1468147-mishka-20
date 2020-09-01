@@ -3,10 +3,18 @@
   font-style: normal;
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-start;
+  }
 }
 
 .address-wrapper__address {
   @include reset-style;
+
+  @media (min-width: $desktop-width) {
+    width: 240px;
+  }
 }
 
 .address-wrapper__name {

@@ -7,17 +7,9 @@
 
   @media (min-width: $tablet-width) {
     width: 768px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   @media (min-width: $desktop-width) {
-    width: 768px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 1150px;
   }
 }

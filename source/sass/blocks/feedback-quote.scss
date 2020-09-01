@@ -5,25 +5,37 @@
 }
 
 .feedback-quote__content {
-  @include reset-style;
   margin-bottom: 33px;
-  line-height: 30px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 61px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 44px;
   }
 }
 
 .feedback-quote__author {
   font-weight: bold;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 17px;
+  }
 }
 
 .feedback-quote__cite {
   margin-bottom: 30px;
   font-style: normal;
   width: 300px;
+
   @media (min-width: $tablet-width) {
-    margin: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -32,10 +44,8 @@
   margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
+    margin-bottom: 0;
     margin-right: 20px;
-    font-size: 18px;
-    line-height: 24px;
     display: flex;
     justify-content: space-between;
   }

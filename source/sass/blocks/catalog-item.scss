@@ -7,11 +7,63 @@
   padding-bottom: 27px;
   margin-bottom: 30px;
   border: $border-base-style;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin-bottom: 54px;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    grid-template-columns: 1fr;
+  }
 }
 
 .catalog-item__wrapper {
+  padding: 0;
+  margin: 0;
   margin-left: 28px;
   margin-right: 28px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 2;
+    justify-content: flex-start;
+    height: fit-content;
+  }
+}
+
+.catalog-item__price-wrapper {
+  padding-top: 24px;
+  border-top: $border-base-style;
+
+  @media (min-width: $tablet-width) {
+    height: 15%;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 26px;
+  }
+}
+
+.catalog-item__info-wrapper {
+  @media (min-width: $desktop-width) {
+    padding-bottom: 60px;
+  }
+
+  .catalog-item_type_bag & {
+    @media (min-width: $desktop-width) {
+      padding-bottom: 36px;
+    }
+  }
 }
 
 .catalog-item__link {
@@ -23,16 +75,56 @@
   margin-top: 26px;
   margin-bottom: 6px;
   font-size: 17px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .catalog-item__description {
   padding-bottom: 18px;
   margin-bottom: 23px;
-  border-bottom: $border-base-style;
   font-size: 13px;
   line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+  }
 }
 
 .catalog-item__price {
   font-weight: bold;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+  }
+}
+
+.catalog-item__image-link {
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin: 0;
+    height: 334px;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 1;
+    width: 316px;
+    height: 462px;
+  }
+}
+
+.catalog-item__image {
+  @media (min-width: $tablet-width) {
+    width: 334px;
+    height: 334px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 316px;
+    height: 462px;
+    order: 1;
+  }
 }

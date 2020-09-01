@@ -1,3 +1,17 @@
 .shopping-list {
   display: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.shopping-list__item {
+  @media (min-width: $tablet-width) {
+    width: 24%;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-basis: 50%;
+  }
 }

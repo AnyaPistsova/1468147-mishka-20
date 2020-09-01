@@ -1,0 +1,11 @@
+.contacts-map__content {
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    height: 467px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 527px;
+    height: 457px;
+  }
+}
