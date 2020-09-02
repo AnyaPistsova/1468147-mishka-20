@@ -1,6 +1,31 @@
 .form {
   font-weight: bold;
   margin-bottom: 55px;
+  display: grid;
+}
+
+.form__fieldset-container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.form__items-wrapper {
+  @media (min-width: $tablet-width) {
+    flex-basis: 70%;
+  }
+
+  &_type_checkbox {
+    @media (min-width: $tablet-width) {
+      display: grid;
+      grid-template-columns: 205px 205px;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-template-columns: 205px 205px 205px;
+    }
+  }
 }
 
 .form__fieldset {
@@ -8,12 +33,21 @@
   border-width: 0;
   position: relative;
 
+  @media (min-width: $tablet-width) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
   &_type_radio {
     margin-bottom: 31px;
   }
 
   &_type_checkbox {
     margin-bottom: 33px;
+
+    @media (min-width: $tablet-width) {
+      background-color: $background-special-color;
+    }
   }
 
   &_type_text {
@@ -22,10 +56,19 @@
 
   &_type_tel {
     margin-bottom: $form-special-margin;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+      background-color: $background-special-color;
+    }
   }
 
   &_type_email {
     margin-bottom: $form-special-margin;
+
+    @media (min-width: $tablet-width) {
+      background-color: $background-special-color;
+    }
   }
 
   &_type_textarea {
@@ -88,6 +131,14 @@
   position: relative;
   z-index: auto;
 
+  @media (min-width: $tablet-width) {
+    flex-basis: 25%;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-basis: 15%;
+  }
+
   &::before {
     content: "";
     left: 0;
@@ -96,7 +147,11 @@
     top: 50%;
     background-color: $green--light;
     position: absolute;
-    z-index: -1;
+    z-index: 0;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 
   &_type_radio {
@@ -106,6 +161,10 @@
   &_type_checkbox {
     padding-right: 16px;
     margin-bottom: $form-special-margin;
+
+    @media (min-width: $tablet-width) {
+      background-color: $background-special-color;
+    }
   }
 
   &_type_text {
@@ -116,11 +175,19 @@
   &_type_tel {
     padding-right: 29px;
     margin-bottom: 19px;
+
+    @media (min-width: $tablet-width) {
+      background-color: $background-special-color;
+    }
   }
 
   &_type_email {
     padding-right: 20px;
     margin-bottom: 20px;
+
+    @media (min-width: $tablet-width) {
+      background-color: $background-special-color;
+    }
   }
 
   &_type_textarea {
@@ -136,6 +203,10 @@
   position: relative;
   display: block;
   user-select: contain;
+
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+  }
 
   &_type_checkbox {
     @include box-label;
@@ -164,6 +235,11 @@
   &::placeholder {
     opacity: 0.3;
     color: $black;
+
+    @media (min-width: $tablet-width) {
+      font-size: 19px;
+      line-height: 18px;
+    }
   }
 
   &_type_text {
@@ -172,10 +248,18 @@
 
   &_type_tel {
     padding-bottom: 20px;
+
+    @media (min-width: $tablet-width) {
+      background-color: $background-special-color;
+    }
   }
 
   &_type_email {
     padding-bottom: 18px;
+
+    @media (min-width: $tablet-width) {
+      background-color: $background-special-color;
+    }
   }
 }
 
@@ -240,6 +324,26 @@
     opacity: 0.3;
     color: $black;
     width: 167px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 19px;
+      line-height: 18px;
+      width: 475px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+}
+
+.form__sign-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-end;
   }
 }
 
@@ -250,4 +354,27 @@
   font-size: 14px;
   line-height: 16px;
   color: $font-base-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+    order: 2;
+    text-align: end;
+    flex-basis: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
+}
+
+.form__button {
+  @media (min-width: $tablet-width) {
+    flex-basis: 35%;
+    order: 1;
+  }
+
+  // @media (min-width: $desktop-width) {
+  //   grid-template-columns: 205px 205px 205px;
+  // }
 }
