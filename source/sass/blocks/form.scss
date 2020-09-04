@@ -2,6 +2,16 @@
   font-weight: bold;
   margin-bottom: 55px;
   display: grid;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 100px;
+    margin-right: 225px;
+  }
 }
 
 .form__fieldset-container {
@@ -13,7 +23,11 @@
 
 .form__items-wrapper {
   @media (min-width: $tablet-width) {
-    flex-basis: 70%;
+    flex-basis: 465px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-basis: 700px;
   }
 
   &_type_checkbox {
@@ -31,7 +45,6 @@
 .form__fieldset {
   @include reset-style;
   border-width: 0;
-  position: relative;
 
   @media (min-width: $tablet-width) {
     padding-top: 50px;
@@ -56,8 +69,10 @@
 
   &_type_tel {
     margin-bottom: $form-special-margin;
+    position: relative;
 
     @media (min-width: $tablet-width) {
+      padding-bottom: 25px;
       margin-bottom: 0;
       background-color: $background-special-color;
     }
@@ -65,28 +80,16 @@
 
   &_type_email {
     margin-bottom: $form-special-margin;
+    position: relative;
 
     @media (min-width: $tablet-width) {
+      padding-top: 0;
       background-color: $background-special-color;
     }
   }
 
   &_type_textarea {
     margin-bottom: 17px;
-  }
-
-  &_type_tel::after {
-    @include form-icon;
-    width: 25px;
-    height: 24px;
-    background-image: url("../img/icon-phone.svg");
-  }
-
-  &_type_email::after {
-    @include form-icon;
-    width: 32px;
-    height: 26px;
-    background-image: url("../img/icon-mail.svg");
   }
 }
 
@@ -99,6 +102,10 @@
 
   &_type_radio {
     margin-bottom: 12px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 24px;
+    }
   }
 
   &_type_checkbox {
@@ -107,14 +114,24 @@
 
   &_type_text {
     margin-bottom: 22px;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+    }
   }
 
-  &_number_first .form__label {
+  &_works_interior .form__label {
+    width: 200px;
     padding-top: 8px;
     padding-bottom: 2px;
+
+    @media (min-width: $tablet-width) {
+      width: auto; 
+      padding-top: 16px;
+    }
   }
 
-  &_number_second .form__label {
+  &_works_toy .form__label {
     padding-top: 14px;
     padding-bottom: 16px;
   }
@@ -132,11 +149,11 @@
   z-index: auto;
 
   @media (min-width: $tablet-width) {
-    flex-basis: 25%;
+    flex-basis: 170px;
   }
 
   @media (min-width: $desktop-width) {
-    flex-basis: 15%;
+    flex-basis: 112px;
   }
 
   &::before {
@@ -170,6 +187,10 @@
   &_type_text {
     padding-right: 18px;
     margin-bottom: 29px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 17px;
+    }
   }
 
   &_type_tel {
@@ -178,6 +199,7 @@
 
     @media (min-width: $tablet-width) {
       background-color: $background-special-color;
+      padding-top: 17px;
     }
   }
 
@@ -186,6 +208,7 @@
     margin-bottom: 20px;
 
     @media (min-width: $tablet-width) {
+      padding-top: 17px;
       background-color: $background-special-color;
     }
   }
@@ -218,6 +241,11 @@
 
   &_type_text {
     margin-bottom: 17px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 17px;
+      margin-right: 25px;
+    }
   }
 }
 
@@ -230,7 +258,11 @@
   font-weight: normal;
   line-height: 19px;
   position: relative;
-  z-index: 1;
+  z-index: auto;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 20px;
+  }
 
   &::placeholder {
     opacity: 0.3;
@@ -243,10 +275,12 @@
   }
 
   &_type_text {
+    padding-top: 17px;
     padding-bottom: 17px;
   }
 
   &_type_tel {
+    padding-top: 17px;
     padding-bottom: 20px;
 
     @media (min-width: $tablet-width) {
@@ -255,6 +289,7 @@
   }
 
   &_type_email {
+    padding-top: 17px;
     padding-bottom: 18px;
 
     @media (min-width: $tablet-width) {
@@ -266,7 +301,7 @@
 .form__input_type_checkbox + .form__label::before {
   cursor: pointer;
   content: "";
-  top: 0%;
+  top: 0;
   left: 0;
   border: $border-bold-style;
   width: 38px;
@@ -326,6 +361,7 @@
     width: 167px;
 
     @media (min-width: $tablet-width) {
+      padding-top: 8px;
       font-size: 19px;
       line-height: 18px;
       width: 475px;
@@ -333,7 +369,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 100%;
+    width: 95%;
   }
 }
 
@@ -343,7 +379,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    justify-content: flex-end;
+    margin-left: 135px;
   }
 }
 
@@ -360,11 +396,11 @@
     line-height: 30px;
     order: 2;
     text-align: end;
-    flex-basis: 50%;
+    flex-basis: 53%;
   }
 
   @media (min-width: $desktop-width) {
-
+    flex-basis: 46%;
   }
 }
 
@@ -374,7 +410,7 @@
     order: 1;
   }
 
-  // @media (min-width: $desktop-width) {
-  //   grid-template-columns: 205px 205px 205px;
-  // }
+  @media (min-width: $desktop-width) {
+    flex-basis: 23%;
+  }
 }

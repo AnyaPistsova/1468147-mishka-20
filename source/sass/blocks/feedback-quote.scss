@@ -8,10 +8,12 @@
   margin-bottom: 33px;
 
   @media (min-width: $tablet-width) {
+    width: 670px;
     margin-bottom: 61px;
   }
 
   @media (min-width: $desktop-width) {
+    width: 875px;
     margin-bottom: 44px;
   }
 }

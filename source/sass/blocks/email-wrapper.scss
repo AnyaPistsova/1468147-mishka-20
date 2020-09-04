@@ -1,8 +1,13 @@
 .email-wrapper {
   @include reset-style;
+  width: 86%;
   margin-bottom: 45px;
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
 
   @media (min-width: $desktop-width) {
     justify-content: flex-start;

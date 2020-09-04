@@ -63,30 +63,32 @@
   <main class="page-main">
     <h1 class="visually-hidden">Главная страница магазина «Мишка»</h1>
     <div class="main-menu__wrapper">
-      <section class="main-menu page-container">
-        <h2 class="visually-hidden">Товары</h2>
-        <div class="main-menu__description-wrapper">
-          <p class="main-menu__description">
-            Милые штуки <span class="main-menu__word-style">ручной</span>
-            работы для&nbsp;дома
-          </p>
+      <section class="main-menu">
+        <div class="main-menu__container">
+          <h2 class="visually-hidden">Товары</h2>
+          <div class="main-menu__description-wrapper">
+            <p class="main-menu__description">
+              Милые штуки <span class="main-menu__word-style">ручной</span>
+              работы для&nbsp;дома
+            </p>
+          </div>
+          <ul class="main-list">
+            <li class="main-list__item main-list__item_shopping-card_interior">
+              <a class="main-list__link" href="">
+                <span class="main-list__link-wrapper">Предметы интерьера</span>
+              </a>
+            </li>
+            <li class="main-list__item main-list__item_shopping-card_toys">
+              <a class="main-list__link" href="">
+                <span class="main-list__link-wrapper">Детские игрушки</span>
+              </a>
+            </li>
+          </ul>
         </div>
-        <ul class="main-list">
-          <li class="main-list__item main-list__item_shopping-card_interior">
-            <a class="main-list__link" href="">
-              <span class="main-list__link-wrapper">Предметы интерьера</span>
-            </a>
-          </li>
-          <li class="main-list__item main-list__item_shopping-card_toys">
-            <a class="main-list__link" href="">
-              <span class="main-list__link-wrapper">Детские игрушки</span>
-            </a>
-          </li>
-        </ul>
       </section>
     </div>
-    <div class="page-container">
-      <article class="best-product main-container">
+    <div class="best-product__container">
+      <article class="best-product">
         <div class="best-product__title-wrapper">
           <h2 class="best-product__title">Вязаные корзинки</h2>
           <span class="best-product__sign">Товар недели</span>
@@ -121,7 +123,9 @@
           </div>
         </div>
       </article>
-      <article class="main-advantages main-container">
+    </div>
+    <div class="main-advantages__container">
+      <article class="main-advantages">
         <h2 class="main-advantages__title">Коротко о нас</h2>
         <ul class="main-advantages__list">
           <li class="main-advantages__item main-advantages__item_logo_flower">
@@ -150,67 +154,71 @@
           </li>
         </ul>
       </article>
-      <article class="feedback main-container">
-        <h2 class="feedback__title">Отзывы</h2>
-        <blockquote class="feedback__quote feedback-quote">
-          <p class="feedback-quote__content">
-            Я молодая мама, но&nbsp;всё равно фотографии не&nbsp;набирали и&nbsp;близко такого количества лайков, как
-            у
-            популярных
-            инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в&nbsp;Мишке, и мои фотографии сразу стали
-            более
-            стильными, а&nbsp;также набирают больше лайков!
-          </p>
-          <div class="feedback-quote__author-wrapper">
-            <div class="feedback-quote__cite-wrapper">
-              <p class="feedback-quote__author">
-                Анастастия Красильникова
+    </div>
+    <div class="feedback__container-container">
+      <div class="feedback__container">
+        <article class="feedback">
+          <div class="feedback__wrapper">
+            <h2 class="feedback__title">Отзывы</h2>
+            <blockquote class="feedback__quote feedback-quote">
+              <p class="feedback-quote__content">
+                Я молодая мама, но&nbsp;всё равно фотографии не&nbsp;набирали и&nbsp;близко такого количества лайков,
+                как
+                у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в&nbsp;Мишке, и мои фотографии
+                сразу
+                стали более стильными, а&nbsp;также набирают больше лайков!
               </p>
-              <cite class="feedback-quote__cite">
-                @misssssiskras
-              </cite>
-            </div>
-            <div class="feedback-quote__buttons-wrapper">
-              <button class="feedback-quote__button feedback__button_next" type="button">Назад</button>
-              <button class="feedback-quote__button feedback__button_back" type="button">Вперёд</button>
-            </div>
+              <div class="feedback-quote__author-wrapper">
+                <div class="feedback-quote__cite-wrapper">
+                  <p class="feedback-quote__author">
+                    Анастастия Красильникова
+                  </p>
+                  <cite class="feedback-quote__cite">
+                    @misssssiskras
+                  </cite>
+                </div>
+                <div class="feedback-quote__buttons-wrapper">
+                  <button class="feedback-quote__button feedback-quote__button_next" type="button">Назад</button>
+                  <button class="feedback-quote__button feedback-quote__button_back" type="button">Вперёд</button>
+                </div>
+              </div>
+            </blockquote>
+            <a class="feedback__write-button main-button" href="">Написать</a>
           </div>
-        </blockquote>
-        <a class="feedback__write-button main-button" href="">Написать</a>
-      </article>
-      <section class="contacts">
-        <div class="main-container">
-          <h2 class="contacts__title">Контакты</h2>
-          <div class="contacts__info">
-            <div class="contacts__container">
-              <p class="email-wrapper">
-                <span class="email-wrapper__name">e-mail:</span>
-                <span class="email-wrapper__email-wrapper"><a class="email-wrapper__email"
-                    href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></span>
-              </p>
-              <address class="contacts__wrapper address-wrapper">
-                <span class="address-wrapper__name">адрес:</span>
-                <p class="address-wrapper__address">г. Санкт-Петербург, ул.&nbsp;Большая Конюшенная, д.&nbsp;19/8,
-                  офис
-                  101</p>
-              </address>
-            </div>
-            <div class="contacts__map contacts-map">
-              <img class="contacts-map__content" src="img/map-mobile@1x.jpg" width="320" height="454"
-                alt="Карта с расположением офиса по адресу г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101 ">
-            </div>
-            <div class="contacts__button-wrapper main-container">
-              <a class="contacts__button main-button" href="">Напишите нам</a>
-            </div>
+        </article>
+      </div>
+    </div>
+    <section class="contacts">
+      <h2 class="contacts__title">Контакты</h2>
+      <div class="contacts__container">
+        <div class="contacts__info">
+          <div class="contacts__info-wrapper">
+            <p class="email-wrapper">
+              <span class="email-wrapper__name">e-mail:</span>
+              <span><a class="email-wrapper__email"
+                  href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></span>
+            </p>
+            <address class="contacts__wrapper address-wrapper">
+              <span class="address-wrapper__name">адрес:</span>
+              <p class="address-wrapper__address">г. Санкт-Петербург, ул.&nbsp;Большая Конюшенная, д.&nbsp;19/8,
+                офис 101</p>
+            </address>
+          </div>
+          <div class="contacts__map contacts-map">
+            <img class="contacts-map__content" src="img/map-mobile@1x.jpg" width="320" height="454"
+              alt="Карта с расположением офиса по адресу г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101 ">
+          </div>
+          <div class="contacts__button-wrapper">
+            <a class="contacts__button main-button" href="">Напишите нам</a>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   </main>
 
   <footer class="page-footer__wrapper">
     <div class="page-footer page-container">
-      <a class="page-footer__logo catalog-container">
+      <a class="page-footer__logo">
         <img src="img/logo-footer.svg" width="86" height="35" alt="Логотип магазина «Мишка»">
       </a>
       <ul class="social-media-list">
@@ -224,7 +232,7 @@
           <a href="" aria-label="Перейти на страницу магазина «Мишка» в Twitter">T</a>
         </li>
       </ul>
-      <div class="developer-info catalog-container">
+      <div class="developer-info">
         <span class="developer-info__text">Разработано</span>
         <a class="developer-info__link" href="https://htmlacademy.ru/intensive/adaptive"
           aria-label="Перейти на сайт HTML Academy">
@@ -235,4 +243,5 @@
   </footer>
 
 </body>
+
 </html>

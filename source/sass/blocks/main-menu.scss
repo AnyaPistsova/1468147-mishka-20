@@ -16,6 +16,20 @@
   }
 }
 
+.main-menu {
+  @media (min-width: $tablet-width) {
+    width: 668px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
+  }
+}
+
 .main-menu__wrapper {
   border-top: 1px $grey-darker solid;
   background-color: $grey--lightest;
@@ -26,15 +40,11 @@
   padding-bottom: 120px;
 
   @media (min-width: $tablet-width) {
-    width: 85%;
-    margin-left: auto;
-    margin-right: auto;
     padding-top: 154px;
     padding-bottom: 372px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 65%;
     padding-top: 158px;
     padding-bottom: 355px;
   }
@@ -54,6 +64,7 @@
   @media (min-width: $desktop-width) {
     font-size: 53px;
     line-height: 57px;
+    white-space: pre-line;
   }
 }
 

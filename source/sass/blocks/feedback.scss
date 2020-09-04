@@ -1,19 +1,56 @@
 .feedback {
   margin-bottom: 90px;
-  display: flex;
-  flex-wrap: wrap;
-  line-height: 30px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 83px;
-    padding-bottom: 47px;
-    flex-direction: row;
+    padding-left: 50px;
+    padding-right: 50px;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
   }
 
   @media (min-width: $desktop-width) {
+    padding-left: 0px;
+    padding-right: 0;
+  }
+}
+
+.feedback__container {
+  @media (min-width: $desktop-width) {
+    margin-left: 50px;
+  }
+}
+
+.feedback__container-container {
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: auto;
+    margin-right: auto;  
+    width: 1150px;
+  }
+}
+
+.feedback__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 30px;
+  
+  @media (min-width: $tablet-width) {
+    padding-top: 83px;
+    padding-bottom: 47px;
+    flex-direction: row;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 175px;
     padding-top: 78px;
+    padding-right: 50px;
   }
 }
 
@@ -21,7 +58,7 @@
   width: 100%;
 
   @media (min-width: $tablet-width) {
-    order: 0;
+    order: 1;
     width: 175px;
   }
 }
