@@ -21,7 +21,7 @@
   padding-right: 10px;
   margin-left: auto;
   margin-right: auto;
-  
+
   @media (min-width: $tablet-width) {
     width: 668px;
     padding-left: 50px;
@@ -67,8 +67,9 @@
 }
 
 .best-product__description {
-  width: 255px;
   @include reset-style;
+
+  width: 255px;
   margin-top: 18px;
   margin-bottom: 18px;
 
@@ -125,10 +126,6 @@
 
 .best-product__title {
   @include index-title;
-
-  @media (min-width: $desktop-width) {
-
-  }
 }
 
 .best-product__title-wrapper {
