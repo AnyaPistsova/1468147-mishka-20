@@ -4,13 +4,13 @@
   display: grid;
 
   @media (min-width: $tablet-width) {
-    margin-left: 50px;
-    margin-right: 50px;
+    // margin-left: 50px;
+    // margin-right: 50px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 100px;
-    margin-right: 225px;
+    // margin-left: 100px;
+    // margin-right: 225px;
   }
 }
 
@@ -139,6 +139,7 @@
 
 .form__legend {
   display: inline-block;
+  width: fit-content;
   padding-right: 25px;
   font-size: 17px;
   line-height: 16px;
@@ -158,13 +159,13 @@
 
   &::before {
     content: "";
-    left: 0;
+    left: 33px;
     width: 260px;
     height: 1px;
     top: 50%;
     background-color: $green--light;
     position: absolute;
-    z-index: 0;
+    z-index: -5;
 
     @media (min-width: $tablet-width) {
       display: none;
@@ -396,11 +397,11 @@
     line-height: 30px;
     order: 2;
     text-align: end;
-    flex-basis: 53%;
+    flex-basis: 65%;
   }
 
   @media (min-width: $desktop-width) {
-    flex-basis: 46%;
+    flex-basis: 54%;
   }
 }
 

@@ -7,7 +7,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 1050px;
+    width: $desktop-block;
     margin-bottom: -90px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 90px 90px;
@@ -16,19 +16,19 @@
 
 .main-nav__item {
   @include list-state;
+  @include centering;
+  margin: auto;
   z-index: 3;
-  margin-left: auto;
-  margin-right: auto;
 
   @media (min-width: $tablet-width) {
-    margin-left: 0;
-    margin-right: 0;
+    @include canceling-centering;
   }
 
   &_lists_logo {
     @media (min-width: $desktop-width) {
       grid-column: 2;
       grid-row: 1;
+      justify-self: center;
     }
   }
 

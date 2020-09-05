@@ -34,7 +34,7 @@
 .feedback-quote__cite {
   margin-bottom: 30px;
   font-style: normal;
-  width: 300px;
+  width: $mobile-block;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;

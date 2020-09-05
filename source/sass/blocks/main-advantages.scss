@@ -1,8 +1,11 @@
 .main-advantages {
+  @include mobile-paddings;
   margin-bottom: 58px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 83px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -11,20 +14,16 @@
 }
 
 .main-advantages__container {
-  width: 300px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-left: auto;
-  margin-right: auto;
+  @include centering;
+  width: 320px;
 
   @media (min-width: $tablet-width) {
-    width: 668px;
-    padding-left: 50px;
-    padding-right: 50px;
+    @include not-mobile-paddings;
+    width: $tablet-block;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1050px;
+    width: $desktop-block;
   }
 }
 
@@ -35,7 +34,7 @@
   line-height: 20px;
 
   @media (min-width: $tablet-width) {
-    width: 668px;
+    width: $tablet-block;
     font-size: 20px;
     line-height: 22px;
     display: grid;
@@ -97,7 +96,7 @@
     grid-column: 2;
 
     @media (min-width: $desktop-width) {
-      width: 300px;
+      width: $mobile-block;
     }
   }
 

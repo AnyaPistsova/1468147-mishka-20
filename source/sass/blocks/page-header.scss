@@ -32,12 +32,11 @@
   }
 
   @media (min-width: $desktop-width) {
+    @include centering;
     width: 150px;
     margin-top: 0;
     margin-bottom: 0;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
@@ -47,14 +46,12 @@
 
 .page-header__wrapper {
   @media (min-width: $tablet-width) {
-    width: 668px;
-    padding-left: 50px;
-    padding-right: 50px;
-    margin-left: auto;
-    margin-right: auto;
+    @include centering;
+    @include not-mobile-paddings;
+    width: $tablet-block;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1050px;
+    width: $desktop-block;
   }
 }
