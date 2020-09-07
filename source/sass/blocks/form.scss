@@ -2,16 +2,6 @@
   font-weight: bold;
   margin-bottom: 55px;
   display: grid;
-
-  @media (min-width: $tablet-width) {
-    // margin-left: 50px;
-    // margin-right: 50px;
-  }
-
-  @media (min-width: $desktop-width) {
-    // margin-left: 100px;
-    // margin-right: 225px;
-  }
 }
 
 .form__fieldset-container {
@@ -138,6 +128,7 @@
 }
 
 .form__legend {
+  @include list-state;
   display: inline-block;
   width: fit-content;
   padding-right: 25px;

@@ -8,7 +8,7 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body class="page__body page-body">
+<body class="page-body">
   <header class="page-header page-header__wrapper">
     <nav class=" main-nav">
       <a class="main-nav__item main-nav__item_lists_logo page-header__logo">
@@ -64,27 +64,21 @@
     <h1 class="visually-hidden">Главная страница магазина «Мишка»</h1>
     <div class="main-menu__wrapper">
       <section class="main-menu">
-        <div class="main-menu__container">
-          <h2 class="visually-hidden">Товары</h2>
-          <div class="main-menu__description-wrapper">
-            <p class="main-menu__description">
-              Милые штуки <span class="main-menu__word-style">ручной</span>
-              работы для&nbsp;дома
-            </p>
-          </div>
-          <ul class="main-list">
-            <li class="main-list__item main-list__item_shopping-card_interior">
-              <a class="main-list__link" href="">
-                <span class="main-list__link-wrapper">Предметы интерьера</span>
-              </a>
-            </li>
-            <li class="main-list__item main-list__item_shopping-card_toys">
-              <a class="main-list__link" href="">
-                <span class="main-list__link-wrapper">Детские игрушки</span>
-              </a>
-            </li>
-          </ul>
+        <h2 class="visually-hidden">Товары</h2>
+        <div class="main-menu__description-wrapper">
+          <p class="main-menu__description">
+            Милые штуки <span class="main-menu__word-style">ручной</span>
+            работы для&nbsp;дома
+          </p>
         </div>
+        <ul class="main-list">
+          <li class="main-list__item main-list__item_shopping-card_interior">
+            <a class="main-list__link" href="">Предметы<br>интерьера</a>
+          </li>
+          <li class="main-list__item main-list__item_shopping-card_toys">
+            <a class="main-list__link" href="">Детские<br>игрушки</a>
+          </li>
+        </ul>
       </section>
     </div>
     <div class="best-product__container">
@@ -193,8 +187,7 @@
           <div class="contacts__info-wrapper">
             <p class="email-wrapper">
               <span class="email-wrapper__name">e-mail:</span>
-              <span><a class="email-wrapper__email"
-                  href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></span>
+              <a class="email-wrapper__email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
             </p>
             <address class="contacts__wrapper address-wrapper">
               <span class="address-wrapper__name">адрес:</span>
@@ -214,8 +207,8 @@
     </section>
   </main>
 
-  <footer class="page-footer__wrapper">
-    <div class="page-footer page-footer__container">
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
       <a class="page-footer__logo">
         <img src="img/logo-footer.svg" width="86" height="35" alt="Логотип магазина «Мишка»">
       </a>

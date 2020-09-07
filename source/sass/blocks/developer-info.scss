@@ -9,6 +9,7 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
+    padding-top: 0;
     border-top: 0;
   }
 }

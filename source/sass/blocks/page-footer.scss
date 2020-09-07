@@ -1,13 +1,25 @@
 .page-footer {
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 18px;
+  background-color: $background-special-color;
+}
+
+.page-footer__logo {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.page-footer__wrapper {
   @include centering;
   width: 260px;
   padding-top: 25px;
   padding-bottom: 23px;
   padding-left: 20px;
   padding-right: 20px;
-  font-weight: bold;
-  font-size: 19px;
-  line-height: 18px;
 
   @media (min-width: $tablet-width) {
     @include not-mobile-paddings;
@@ -20,16 +32,4 @@
   @media (min-width: $desktop-width) {
     width: $desktop-block;
   }
-}
-
-.page-footer__logo {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: block;
-  }
-}
-
-.page-footer__wrapper {
-  background-color: $background-special-color;
 }

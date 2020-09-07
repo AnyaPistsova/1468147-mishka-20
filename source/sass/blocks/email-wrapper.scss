@@ -17,6 +17,7 @@
 }
 
 .email-wrapper__email {
+  display: inline-block;
   padding-bottom: 3px;
   text-decoration: none;
   color: $font-base-color;

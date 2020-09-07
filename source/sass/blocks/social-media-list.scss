@@ -6,6 +6,11 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 
 .social-media-list__item {
@@ -21,6 +26,10 @@
     width: 22px;
     height: 21px;
     background-image: url("../img/icon-insta.svg");
+
+    @media (min-width: $tablet-width) {
+      top: -25px;
+    }
   }
 
   &_link_facebook::after {
@@ -30,6 +39,10 @@
     width: 15px;
     height: 29px;
     background-image: url("../img/icon-fb.svg");
+
+    @media (min-width: $tablet-width) {
+      top: -28px;
+    }
   }
 
   &_link_twitter::after {
@@ -39,6 +52,10 @@
     width: 24px;
     height: 20px;
     background-image: url("../img/icon-twitter.svg");
+
+    @media (min-width: $tablet-width) {
+      top: -24px;
+    }
   }
 }
 
