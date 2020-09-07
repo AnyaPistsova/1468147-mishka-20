@@ -67,7 +67,7 @@
 
     &::after {
       @include icon-position;
-      top: 0px;
+      top: 0;
       left: 8px;
       width: 33px;
       height: 38px;
@@ -86,8 +86,8 @@
 
     &::after {
       @include icon-position;
-      top: 0px;
-      left: 0px;
+      top: 0;
+      left: 0;
       width: 47px;
       height: 27px;
       background-image: url("../img/icon-feature-money.svg");
@@ -127,8 +127,8 @@
 
     &::after {
       @include icon-position;
-      top: 0px;
-      left: 0px;
+      top: 0;
+      left: 0;
       width: 35px;
       height: 34px;
       background-image: url("../img/icon-feature-ball.svg");
@@ -167,8 +167,8 @@
 
     &::after {
       @include icon-position;
-      top: 0px;
-      left: 0px;
+      top: 0;
+      left: 0;
       width: 33px;
       height: 32px;
       background-image: url("../img/icon-feature-gift.svg");

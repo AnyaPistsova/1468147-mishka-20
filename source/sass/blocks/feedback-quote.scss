@@ -87,12 +87,12 @@
     border-right: 0;
 
     &::after {
-    @include icon-position;
-    top: 18px;
-    left: 37px;
-    width: 50px;
-    height: 26px;
-    background-image: url("../img/icon-left-arrow.svg");
+      @include icon-position;
+      top: 18px;
+      left: 37px;
+      width: 50px;
+      height: 26px;
+      background-image: url("../img/icon-left-arrow.svg");
     }
   }
 
@@ -100,12 +100,12 @@
     border-right: 0;
 
     &::after {
-    @include icon-position;
-    top: 18px;
-    left: 37px;
-    width: 50px;
-    height: 26px;
-    background-image: url("../img/icon-right-arrow.svg");
+      @include icon-position;
+      top: 18px;
+      left: 37px;
+      width: 50px;
+      height: 26px;
+      background-image: url("../img/icon-right-arrow.svg");
     }
   }
 }

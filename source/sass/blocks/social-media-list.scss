@@ -16,7 +16,7 @@
 
   &_link_instagram::after {
     @include icon-position;
-    top: 0px;
+    top: 0;
     left: -30px;
     width: 22px;
     height: 21px;
@@ -34,7 +34,7 @@
 
   &_link_twitter::after {
     @include icon-position;
-    top: 0px;
+    top: 0;
     left: 7px;
     width: 24px;
     height: 20px;
