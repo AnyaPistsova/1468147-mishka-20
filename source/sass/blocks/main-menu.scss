@@ -26,12 +26,13 @@
 }
 
 .main-menu__description-wrapper {
-  padding-top: 75px;
+  padding-top: 71px;
   padding-bottom: 120px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 154px;
+    padding-top: 156px;
     padding-bottom: 372px;
+    width: 99%;
   }
 
   @media (min-width: $desktop-width) {

@@ -1,6 +1,7 @@
 .social-media-list {
   @include list-state;
-  margin-bottom: 27px;
+  padding-top: 3px;
+  padding-bottom: 51px;
   width: auto;
   display: flex;
   flex-wrap: wrap;
@@ -11,6 +12,34 @@
   text-align: center;
   width: auto;
   margin-right: 41px;
+  position: relative;
+
+  &_link_instagram::after {
+    @include icon-position;
+    top: 0px;
+    left: -30px;
+    width: 22px;
+    height: 21px;
+    background-image: url("../img/icon-insta.svg");
+  }
+
+  &_link_facebook::after {
+    @include icon-position;
+    top: -3px;
+    left: -7px;
+    width: 15px;
+    height: 29px;
+    background-image: url("../img/icon-fb.svg");
+  }
+
+  &_link_twitter::after {
+    @include icon-position;
+    top: 0px;
+    left: 7px;
+    width: 24px;
+    height: 20px;
+    background-image: url("../img/icon-twitter.svg");
+  }
 }
 
 .social-media-list__item:last-child {

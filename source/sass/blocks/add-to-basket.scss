@@ -1,5 +1,24 @@
 .add-to-basket {
+position: relative;
+
   @media (min-width: $tablet-width) {
-    padding-top: 30px;
+    padding-top: 10px;
+  }
+
+  &::before {
+    @include icon-position;
+    top: 2px;
+    right: 262px;
+    width: 18px;
+    height: 20px;
+    opacity: 0.2;
+    background-image: url("../img/icon-cart.svg");
+
+    @media (min-width: $tablet-width) {
+      width: 21px;
+      height: 19px;
+      top: 13px;
+      right: 212px;
+    }
   }
 }

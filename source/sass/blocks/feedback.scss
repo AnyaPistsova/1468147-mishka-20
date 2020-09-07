@@ -1,11 +1,12 @@
 .feedback {
   @include mobile-paddings;
-  margin-bottom: 90px;
+  margin-bottom: 86px;
 
   @media (min-width: $tablet-width) {
     @include not-mobile-paddings;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
+    margin-bottom: 130px;
   }
 
   @media (min-width: $desktop-width) {

@@ -1,18 +1,24 @@
 .link-lists {
   @media (min-width: $tablet-width) {
     display: flex;
+    padding-top: 30px;
   }
 }
 
 .link-lists__item {
   display: block;
-  width: 100%;
+  width: 300px;
   padding-top: 29px;
   padding-bottom: 27px;
   border-bottom: $border-base-style;
   z-index: 5;
 
+  & a {
+    font-size: 15px;
+  }
+
   @media (min-width: $tablet-width) {
+    width: 50%;
     padding: 0;
     border: none;
     flex-basis: 50%;
@@ -24,9 +30,13 @@
 
   &_links_catalog {
     border-top: $border-base-style;
+    padding-top: 28px;
+    padding-bottom: 26px;
 
     @media (min-width: $tablet-width) {
       border: none;
+      padding-top: 0;
+      padding-bottom: 0;
     }
 
     @media (min-width: $desktop-width) {
@@ -35,6 +45,14 @@
   }
 
   &_links_form {
+    padding-top: 28px;
+    padding-bottom: 26px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
     @media (min-width: $desktop-width) {
       padding-left: 35px;
     }

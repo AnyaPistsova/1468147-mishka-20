@@ -23,10 +23,11 @@
 .main-list__item .main-list__link {
   @include centering;
   display: block;
-  width: 320px;
+  width: 290px;
   padding-top: 24px;
   padding-bottom: 31px;
   padding-left: 30px;
+  position: relative;
   z-index: 5;
 
   @media (min-width: $tablet-width) {
@@ -35,6 +36,46 @@
     padding-top: 25px;
     padding-bottom: 34px;
     padding-left: 36px;
+  }
+}
+
+.main-list__item_shopping-card_interior .main-list__link::after {
+  @include icon-position;
+  top: 22px;
+  right: 37px;
+  width: 40px;
+  height: 62px;
+  opacity: 0.5;
+  background-image: url("../img/icon-interior.svg");
+
+  @media (min-width: $tablet-width) {
+    top: 30px;
+    right: -95px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 30px;
+    right: -190px;
+  }
+}
+
+.main-list__item_shopping-card_toys .main-list__link::after {
+  @include icon-position;
+  top: 20px;
+  right: 28px;
+  width: 60px;
+  height: 60px;
+  opacity: 0.5;
+  background-image: url("../img/icon-toy.svg");
+
+  @media (min-width: $tablet-width) {
+    top: 30px;
+    right: -95px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 30px;
+    right: -190px;
   }
 }
 

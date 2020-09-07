@@ -47,11 +47,18 @@
 }
 
 @mixin mobile-paddings {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 @mixin not-mobile-paddings {
   padding-left: 50px;
   padding-right: 50px;
+}
+
+@mixin icon-position {
+  content: "";
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  position: absolute;
 }

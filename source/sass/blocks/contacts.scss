@@ -1,12 +1,16 @@
 .contacts {
   line-height: 30px;
   padding-bottom: 39px;
+  
+  @media (min-width: $tablet-width) {
+    margin-bottom: 17px;
+  }
 }
 
 .contacts__container {
   @media (min-width: $desktop-width) {
     @include centering;
-    width: $desktop-block;
+    width: 975px;
     padding-left: 125px;
     padding-right: 50px;
   }
@@ -50,6 +54,7 @@
   @include mobile-paddings;
   width: $mobile-block;
   font-size: 18px;
+  margin-bottom: 29px;
 
   @media (min-width: $tablet-width) {
     @include index-title;
@@ -81,13 +86,17 @@
 }
 
 .contacts__map {
-  margin-bottom: 42px;
+  margin-bottom: 31px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 49px;
+  }
 }
 
 .contacts__button-wrapper {
   @include centering;
 
-  width: 320px;
+  width: 260px;
   display: flex;
   justify-content: center;
 
@@ -101,7 +110,7 @@
 
 .contacts__button {
   @media (min-width: $tablet-width) {
-    width: 198px;
+    width: 225px;
   }
 
   @media (min-width: $desktop-width) {

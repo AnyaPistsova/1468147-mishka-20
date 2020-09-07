@@ -1,14 +1,24 @@
 .page-footer {
+  @include centering;
+  width: 260px;
   padding-top: 25px;
   padding-bottom: 23px;
+  padding-left: 20px;
+  padding-right: 20px;
   font-weight: bold;
   font-size: 19px;
   line-height: 18px;
 
   @media (min-width: $tablet-width) {
+    @include not-mobile-paddings;
+    width: $tablet-block;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-block;
   }
 }
 

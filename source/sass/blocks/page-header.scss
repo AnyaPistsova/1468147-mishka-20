@@ -4,13 +4,15 @@
 }
 
 .page-header__link {
-  padding-left: 70px;
+  padding-left: 67px;
   display: block;
   text-decoration: none;
   color: $black;
   z-index: 5;
 
   @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 24px;
     padding-left: 0;
   }
 
@@ -23,9 +25,10 @@
 .page-header__logo {
   display: flex;
   justify-content: center;
-  margin-top: 22px;
-  margin-bottom: 22px;
+  padding-top: 22px;
+  padding-bottom: 22px;
   z-index: 0;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     justify-content: start;
@@ -41,7 +44,26 @@
 }
 
 .page-header__button {
-  display: none;
+  content: "";
+  padding-top: 25px;
+  border: none;
+  top: 28px;
+  right: 31px;
+  width: 21px;
+  height: 15px;
+  background-color: inherit;
+  background-image: url("../img/icon-menu-close.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  position: absolute;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  // &_close {
+  //   background-image: url("../img/icon-menu-open.svg");
+  // }
 }
 
 .page-header__wrapper {

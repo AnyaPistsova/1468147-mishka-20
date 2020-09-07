@@ -5,12 +5,13 @@
 }
 
 .interactive-list__item {
-  width: 100%;
-  padding-top: 29px;
+  width: 300px;
+  padding-top: 27px;
   padding-bottom: 27px;
   border-bottom: $border-base-style;
 
   @media (min-width: $tablet-width) {
+    width: auto;
     padding: 0;
     border: none;
   }

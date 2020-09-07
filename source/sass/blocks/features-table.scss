@@ -12,13 +12,22 @@
 
 .features-table__value {
   border-bottom: $border-base-style;
+  padding-left: 4px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+  }
 }
 
 .features-table__parameter {
   padding-top: 12px;
-  padding-bottom: 15px;
+  padding-bottom: 7px;
   padding-right: 25px;
   font-weight: normal;
   text-align: left;
   border-bottom: $border-base-style;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 0;
+  }
 }

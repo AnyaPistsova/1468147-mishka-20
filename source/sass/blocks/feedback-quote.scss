@@ -20,10 +20,12 @@
 
 .feedback-quote__author {
   font-weight: bold;
+  line-height: 24px;
+  margin-bottom: 5px;
+  font-size: 16px;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
-    line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {
@@ -64,19 +66,46 @@
   }
 }
 
+.feedback-quote__cite-wrapper {
+  margin-bottom: 22px;
+}
+
 .feedback-quote__button {
-  padding-top: 13px;
-  padding-bottom: 13px;
+  padding-top: 28px;
+  padding-bottom: 27px;
   display: inline-block;
   background-color: $white;
   border: $border-base-style;
   flex-grow: 1;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     border: 0;
   }
-}
 
-.feedback-quote__button_next {
-  border-right: 0;
+  &_next {
+    border-right: 0;
+
+    &::after {
+    @include icon-position;
+    top: 18px;
+    left: 37px;
+    width: 50px;
+    height: 26px;
+    background-image: url("../img/icon-left-arrow.svg");
+    }
+  }
+
+  &_back {
+    border-right: 0;
+
+    &::after {
+    @include icon-position;
+    top: 18px;
+    left: 37px;
+    width: 50px;
+    height: 26px;
+    background-image: url("../img/icon-right-arrow.svg");
+    }
+  }
 }
