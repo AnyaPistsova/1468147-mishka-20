@@ -1,6 +1,8 @@
 .main-video__content {
-  width: $tablet-block;
-  height: 455px;
+  @media (min-width: $tablet-width) {
+    width: $tablet-block;
+    height: 455px;
+  }
 
   @media (min-width: $desktop-width) {
     width: 683px;

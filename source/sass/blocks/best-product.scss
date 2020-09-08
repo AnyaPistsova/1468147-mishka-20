@@ -3,15 +3,41 @@
   color: $font-base-color;
   display: flex;
   flex-direction: column;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 124px;
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 85px;
     padding-bottom: 75px;
     padding-left: 175px;
     padding-right: 50px;
+  }
+
+  &::after {
+    @include icon-position;
+    bottom: -43px;
+    right: -30px;
+    width: 320px;
+    height: 6px;
+    background-size: 100%;
+    background-image: url("../img/bg-zigzag-line.svg");
+
+    @media (min-width: $tablet-width) {
+      width: 772px;
+      height: 17px;
+      bottom: -70px;
+      right: -52px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 1050px;
+      height: 23px;
+      right: 0;
+      bottom: -18px;
+    }
   }
 }
 
@@ -60,7 +86,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 45px;
+    margin-left: -6px;
+    margin-right: 31px;
+    padding-bottom: 12px;
   }
 }
 
@@ -75,6 +103,10 @@
     margin-bottom: 38px;
     width: 295px;
     height: fit-content;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 49px;
   }
 }
 
@@ -127,6 +159,10 @@
 .best-product__title {
   @include index-title;
   margin-bottom: 4px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .best-product__title-wrapper {

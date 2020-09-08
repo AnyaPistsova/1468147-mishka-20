@@ -1,17 +1,18 @@
 .email-wrapper {
   @include reset-style;
   width: 99%;
-  margin-bottom: 31px;
+  margin-bottom: 26px;
   display: flex;
   justify-content: space-between;
 
   @media (min-width: $tablet-width) {
-    width: 100%;
+    width: 285px;
+    justify-content: flex-start;
   }
 
   @media (min-width: $desktop-width) {
     justify-content: flex-start;
-    margin-bottom: 30px;
+    margin-bottom: 24px;
     align-self: end;
   }
 }
@@ -30,6 +31,6 @@
 
 .email-wrapper__name {
   @media (min-width: $tablet-width) {
-    margin-right: 32px;
+    margin-right: 25px;
   }
 }

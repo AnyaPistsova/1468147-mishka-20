@@ -4,6 +4,13 @@
     padding-top: 30px;
     font-size: 15px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 0;
+    font-size: 17px;
+  }
 }
 
 .link-lists__item {
@@ -37,7 +44,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      border-right: 1px $grey-darker solid;
+      width: 297px;
     }
   }
 
@@ -51,7 +58,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding-left: 35px;
+      padding-left: 32px;
     }
   }
 }

@@ -5,6 +5,10 @@
     padding-top: 10px;
   }
 
+  @media (min-width: $desktop-width) {
+    padding-top: 35px;
+  }
+
   &::before {
     @include icon-position;
     top: 2px;
@@ -19,6 +23,10 @@
       height: 19px;
       top: 13px;
       right: 212px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 37px;
     }
   }
 }

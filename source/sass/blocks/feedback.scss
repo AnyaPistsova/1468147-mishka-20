@@ -1,6 +1,7 @@
 .feedback {
   @include mobile-paddings;
   margin-bottom: 86px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     @include not-mobile-paddings;
@@ -13,6 +14,30 @@
     margin-left: 50px;
     padding-left: 0;
     padding-right: 0;
+    margin-bottom: 45px;
+  }
+
+  &::after {
+    @include icon-position;
+    bottom: -50px;
+    right: 0;
+    width: 320px;
+    height: 6px;
+    background-size: 100%;
+    background-image: url("../img/bg-zigzag-line.svg");
+
+    @media (min-width: $tablet-width) {
+      width: 772px;
+      height: 17px;
+      bottom: -62px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 1050px;
+      height: 23px;
+      right: 52px;
+      bottom: -90px;
+    }
   }
 }
 
@@ -41,8 +66,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 175px;
     padding-top: 78px;
+    padding-bottom: 73px;
+    padding-left: 175px;
     padding-right: 50px;
   }
 }
@@ -53,6 +79,7 @@
   @media (min-width: $tablet-width) {
     order: 1;
     width: 175px;
+    margin-top: -5px;
   }
 }
 

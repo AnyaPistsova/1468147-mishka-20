@@ -28,7 +28,8 @@
     background-image: url("../img/icon-insta.svg");
 
     @media (min-width: $tablet-width) {
-      top: -25px;
+      top: -16px;
+      left: -22px;
     }
   }
 
@@ -41,7 +42,8 @@
     background-image: url("../img/icon-fb.svg");
 
     @media (min-width: $tablet-width) {
-      top: -28px;
+      left: 0;
+      top: -20px;
     }
   }
 
@@ -54,7 +56,8 @@
     background-image: url("../img/icon-twitter.svg");
 
     @media (min-width: $tablet-width) {
-      top: -24px;
+      top: -17px;
+      left: 14px;
     }
   }
 }

@@ -42,10 +42,11 @@
 }
 
 .catalog-item__price-wrapper {
-  padding-top: 24px;
   border-top: $border-base-style;
+  padding-top: 25px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 24px;
     height: 15%;
   }
 
@@ -72,7 +73,7 @@
 }
 
 .catalog-item__title {
-  margin-top: 26px;
+  margin-top: 19px;
   margin-bottom: 6px;
   font-size: 17px;
 
@@ -83,7 +84,7 @@
 
 .catalog-item__description {
   padding-bottom: 18px;
-  margin-bottom: 23px;
+  margin-bottom: 0;
   font-size: 13px;
   line-height: 30px;
 
@@ -120,6 +121,7 @@
   @media (min-width: $tablet-width) {
     width: 334px;
     height: 334px;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {

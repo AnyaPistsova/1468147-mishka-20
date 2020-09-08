@@ -14,11 +14,6 @@
     line-height: 24px;
     padding-left: 0;
   }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
 }
 
 .page-header__logo {
@@ -59,10 +54,6 @@
   @media (min-width: $tablet-width) {
     display: none;
   }
-
-  // &_close {
-  //   background-image: url("../img/icon-menu-open.svg");
-  // }
 }
 
 .page-header__wrapper {

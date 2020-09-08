@@ -23,6 +23,8 @@
 
   @media (min-width: $tablet-width) {
     @include not-mobile-paddings;
+    padding-top: 46px;
+    padding-bottom: 60px;
     width: $tablet-block;
     display: flex;
     justify-content: space-between;

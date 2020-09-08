@@ -25,6 +25,10 @@
     height: 20px;
     opacity: 0.2;
     background-image: url("../img/icon-search.svg");
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
   }
 }
 

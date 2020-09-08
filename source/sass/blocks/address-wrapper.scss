@@ -18,5 +18,9 @@
 }
 
 .address-wrapper__name {
-  margin-right: 32px;
+  margin-right: 31px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 25px;
+  }
 }

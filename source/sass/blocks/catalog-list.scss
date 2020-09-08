@@ -1,6 +1,6 @@
 .catalog-list {
   @include list-state;
-  margin-top: 30px;
+  margin-top: 27px;
 
   @media (min-width: $tablet-width) {
     margin-top: 67px;

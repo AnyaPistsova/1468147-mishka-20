@@ -85,7 +85,8 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding-bottom: 30px;
+      padding-top: 3px;
+      margin-top: 16px;
       grid-column: 3;
       grid-row: 2;
     }

@@ -1,9 +1,31 @@
 .contacts {
   line-height: 30px;
   padding-bottom: 39px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 17px;
+
+    &::after {
+      @include icon-position;
+      top: -23px;
+      right: 55px;
+      width: 47px;
+      height: 81px;
+      background-size: 100%;
+      background-image: url("../img/icon-flag.svg");
+
+      @media (min-width: $desktop-width) {
+        top: 178px;
+        right: 0;
+        left: 113px;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+    margin-bottom: 22px;
   }
 }
 
@@ -23,16 +45,17 @@
 
   @media (min-width: $tablet-width) {
     @include not-mobile-paddings;
+    margin-bottom: 47px;
     width: $tablet-block;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 50px;
   }
 
   @media (min-width: $desktop-width) {
     @include canceling-centering;
     width: 310px;
     padding-left: 0;
+    padding-right: 39px;
     grid-template-columns: 1fr;
     grid-column-gap: 0;
     grid-template-rows: 1fr 1fr;
@@ -66,8 +89,9 @@
 
   @media (min-width: $desktop-width) {
     width: 725px;
-    padding-left: 0;
+    padding-left: 20px;
     padding-right: 0;
+    margin-bottom: 52px;
     position: relative;
     top: 195px;
   }
@@ -78,6 +102,7 @@
 
   @media (min-width: $tablet-width) {
     flex-grow: 1;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -89,7 +114,11 @@
   margin-bottom: 31px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 49px;
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
   }
 }
 
@@ -103,8 +132,8 @@
   @media (min-width: $desktop-width) {
     width: 30%;
     position: relative;
-    right: 265px;
-    bottom: 107px;
+    right: 291px;
+    bottom: 82px;
   }
 }
 
@@ -115,5 +144,6 @@
 
   @media (min-width: $desktop-width) {
     width: 230px;
+    margin-top: 18px;
   }
 }

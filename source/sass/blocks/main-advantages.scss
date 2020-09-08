@@ -10,6 +10,7 @@
 
   @media (min-width: $desktop-width) {
     padding-left: 175px;
+    margin-bottom: 32px;
   }
 }
 
@@ -38,7 +39,7 @@
     font-size: 20px;
     line-height: 22px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 349px 1fr;
   }
 
   @media (min-width: $desktop-width) {
@@ -140,7 +141,7 @@
     grid-column: 2;
 
     @media (min-width: $desktop-width) {
-      width: $mobile-block;
+      width: 320px;
     }
 
     &::after {
